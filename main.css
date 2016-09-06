@@ -2510,12 +2510,12 @@ div.fancy-select ul.options li.hover {
   display: block;
   height: 60px;
   position: absolute;
-  left: 0;
+  left: -26px;
   top: 0;
   width: 40px;
   background-color: blue;
   border-left: 20px solid #008ac9;
-  border-bottom: 60px solid #ef8214;
+  border-bottom: 71px solid #ef8214;
 }
 .navbar .nav-right:after {
   content: "";
@@ -2661,6 +2661,33 @@ div.fancy-select ul.options li.hover {
     font-size: 38px;
   }
 }
+.topbanner-home {
+  height: 590px;
+  position: relative;
+}
+.topbanner-home .topbanner-home-block {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+.topbanner-home .topbanner-home-left {
+  background: url(img/home-left.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.topbanner-home .topbanner-home-right {
+  background: url(img/home-right.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.topbanner-home .topbanner-home-block-title {
+  padding: 200px 0 45px 0;
+  font-family: "plutocondbold";
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
 .topbar {
   background-color: #5d004a;
   height: 32px;
@@ -2701,6 +2728,107 @@ div.fancy-select ul.options li.hover {
 }
 .section-bioequivalence img {
   padding-bottom: 20px;
+}
+.section-homeAbout {
+  background: url(img/worldpoints.png) no-repeat;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  text-align: center;
+}
+.section-homeAbout img {
+  padding-bottom: 30px;
+  height: auto;
+  width: 58px;
+}
+.section-homeAbout-line1 {
+  padding-bottom: 50px;
+  font-family: "plutocondbold";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+  .section-homeAbout-line1 {
+    font-size: 22px;
+  }
+}
+.section-homeAbout-desc {
+  padding-bottom: 20px;
+  margin: auto;
+  max-width: 700px;
+  font-size: 16px;
+  text-align: center;
+}
+@media all and (max-width: 768px) {
+  .section-homeAbout-desc {
+    font-size: 13px;
+  }
+}
+.section-homeWorld {
+  background: url(img/worldmap.png) no-repeat;
+  background-size: 70%;
+  background-position: center;
+  background-color: #5d004a;
+  padding: 70px 0;
+  color: #fff;
+  text-align: center;
+}
+@media all and (max-width: 768px) {
+  .section-homeWorld {
+    background-size: cover;
+  }
+}
+.section-homeWorld-line1 {
+  padding-bottom: 50px;
+  font-family: "plutocondbold";
+  font-size: 28px;
+  text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+  .section-homeWorld-line1 {
+    font-size: 22px;
+  }
+}
+.section-homeWorld-line2 {
+  font-family: "plutolight";
+  font-size: 28px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+  .section-homeWorld-line2 {
+    font-size: 20px;
+  }
+}
+.section-homeWorld-line3 {
+  padding-bottom: 20px;
+  font-family: "plutolight";
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+  .section-homeWorld-line3 {
+    font-size: 26px;
+  }
+}
+.section-homeWorld-desc {
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+@media all and (max-width: 768px) {
+  .section-homeWorld-desc {
+    font-size: 13px;
+  }
+}
+.section-homeWorld .btn {
+  background-color: #fff;
+  color: #5d004a;
+}
+.section-homeWorld .btn:hover {
+  background-color: transparent;
+  color: #fff;
 }
 .section-searchmore {
   text-align: center;
