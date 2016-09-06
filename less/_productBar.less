@@ -29,6 +29,17 @@
 		line-height: 48px;
 		text-align: center;
 
+		@media all and (max-width: @screen-md) {
+			padding: 0 10px;
+			width: auto;
+
+			font-size: 12px;
+
+			&:first-child {
+				padding: 0;
+			}
+		}
+
 		@media all and (max-width: @screen-sm) {
 			width: 80%;
 		}

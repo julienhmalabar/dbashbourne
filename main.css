@@ -2411,7 +2411,7 @@ div.fancy-select ul.options li.hover {
 }
 @media all and (max-width: 768px) {
   .footer {
-    padding: 35px 20px;
+    padding: 35px 20px 35px 40px;
   }
 }
 .footer-list {
@@ -2421,6 +2421,14 @@ div.fancy-select ul.options li.hover {
 .footer-listTitle {
   font-size: 14px;
   text-transform: uppercase;
+  position: relative;
+}
+.footer-listTitle i {
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  color: #5d004a;
+  font-size: 11px;
 }
 .terms {
   background-color: #f0f2f5;
@@ -2544,6 +2552,16 @@ div.fancy-select ul.options li.hover {
   font-size: 13px;
   line-height: 48px;
   text-align: center;
+}
+@media all and (max-width: 992px) {
+  .productBar li.productBar-item {
+    padding: 0 10px;
+    width: auto;
+    font-size: 12px;
+  }
+  .productBar li.productBar-item:first-child {
+    padding: 0;
+  }
 }
 @media all and (max-width: 768px) {
   .productBar li.productBar-item {
@@ -2680,6 +2698,9 @@ div.fancy-select ul.options li.hover {
 }
 .section-adverseevent a {
   text-decoration: underline;
+}
+.section-bioequivalence img {
+  padding-bottom: 20px;
 }
 .section-searchmore {
   text-align: center;
