@@ -2009,6 +2009,31 @@ button.close {
 .txt-uppercase {
   text-transform: uppercase;
 }
+@font-face {
+  font-family: 'ethypharmuk-picto';
+  src: url('fonts/ethypharmuk-picto.ttf?9xyj7n') format('truetype'), url('fonts/ethypharmuk-picto.woff?9xyj7n') format('woff'), url('fonts/ethypharmuk-picto.svg?9xyj7n#ethypharmuk-picto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ethypharmuk-picto' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.i-download:before {
+  content: "\e901";
+}
+.i-puce:before {
+  content: "\e900";
+}
 body {
   font-family: "plutolight";
 }
@@ -2018,6 +2043,11 @@ h1 {
   font-size: 36px;
   text-transform: uppercase;
 }
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+}
 h1:after {
   background-color: #ef8214;
   content: "";
@@ -2026,12 +2056,50 @@ h1:after {
   margin: 40px 0 60px 0;
   width: 160px;
 }
+@media all and (max-width: 768px) {
+  h1:after {
+    margin: 25px 0 40px 0;
+  }
+}
+h2 {
+  color: #008ac9;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+h2.h2--white {
+  color: #fff;
+}
+ul.classic-list li {
+  list-style: none;
+}
+ul.classic-list li:before {
+  padding-right: 15px;
+  content: "\e900";
+  color: #008ac9;
+  font-family: 'ethypharmuk-picto' !important;
+  font-size: 10px;
+}
+ul.download-list li {
+  padding-bottom: 6px;
+  list-style: none;
+}
+ul.download-list li:before {
+  padding-right: 15px;
+  content: "\e901";
+  color: #fff;
+  font-family: 'ethypharmuk-picto' !important;
+  font-size: 22px;
+}
+ul.download-list li a:hover {
+  color: #fff;
+}
 .section {
   background-color: #fff;
   padding: 60px 0;
 }
 .section--blue {
   background-color: #008ac9;
+  color: #fff;
 }
 .section--gray {
   background-color: #f0f2f5;
@@ -2041,6 +2109,91 @@ h1:after {
 }
 .section--purple {
   background-color: #5d004a;
+  color: #fff;
+}
+.section--noTopPadding {
+  padding-top: 0;
+}
+div.fancy-select {
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+}
+div.fancy-select div.trigger {
+  background: #008ac9;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 20px 0 25px;
+  position: relative;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+div.fancy-select div.trigger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  top: 20px;
+  right: 9px;
+}
+div.fancy-select ul.options {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 50;
+  max-height: 200px;
+  overflow: auto;
+  background: #fff;
+  min-width: 100%;
+}
+div.fancy-select ul.options.open {
+  border: 3px solid #008ac9;
+  border-top: 0;
+  opacity: 1;
+  padding: 0;
+  top: 48px;
+  visibility: visible;
+}
+div.fancy-select ul.options.overflowing {
+  top: auto;
+  bottom: 40px;
+  transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+div.fancy-select ul.options.overflowing.open {
+  top: auto;
+  bottom: 50px;
+  transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+div.fancy-select ul.options li {
+  padding: 0 20px;
+  color: #008ac9;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 32px;
+  transition: all 150ms ease-out;
+}
+div.fancy-select ul.options li.hover {
+  background: #008ac9;
+  color: #fff;
 }
 .btn {
   background-image: none;
@@ -2076,6 +2229,33 @@ h1:after {
 .btn-large {
   padding: 8px 90px;
 }
+.btn-huge {
+  border: 3px solid #008ac9;
+  display: block;
+  padding: 35px 60px;
+  color: #008ac9;
+  text-align: center;
+  text-decoration: none;
+}
+@media all and (max-width: 992px) {
+  .btn-huge {
+    padding: 35px 30px;
+  }
+}
+.btn-huge:hover {
+  text-decoration: none;
+}
+.btn-huge-title {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.btn-huge-desc {
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+.btn-huge-link {
+  text-decoration: underline;
+}
 .breadcrumb {
   padding: 15px 0 45px;
   color: #737373;
@@ -2091,9 +2271,16 @@ h1:after {
   background: #ef8214;
   display: block;
   padding: 0 20px;
+  position: relative;
   font-size: 16px;
   line-height: 65px;
   text-decoration: none;
+}
+@media all and (max-width: 768px) {
+  .collapsing-faq .collapsing-heading a {
+    font-size: 14px;
+    line-height: 40px;
+  }
 }
 .collapsing-faq .collapsing-heading a .collapsing-headingName,
 .collapsing-faq .collapsing-heading a .collapsing-headingQuestion,
@@ -2104,6 +2291,23 @@ h1:after {
 .collapsing-faq .collapsing-heading a .collapsing-headingName {
   width: 180px;
   text-transform: uppercase;
+}
+.collapsing-faq .collapsing-heading a .collapsing-headingArrow {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+}
+.collapsed .collapsing-faq .collapsing-heading a .collapsing-headingArrow {
+  background-color: #ef8214;
+}
+@media all and (max-width: 768px) {
+  .collapsing-faq .collapsing-heading a .collapsing-headingQuestion {
+    line-height: 20px;
+  }
 }
 .collapsing-faq .collapsing-heading a.collapsed {
   background: #fff;
@@ -2120,6 +2324,11 @@ h1:after {
 .collapsing-faq .collapsing-body {
   padding: 40px 80px 40px 100px;
 }
+@media all and (max-width: 768px) {
+  .collapsing-faq .collapsing-body {
+    padding: 20px;
+  }
+}
 .filter-selector {
   padding-bottom: 110px;
   width: 100%;
@@ -2128,6 +2337,12 @@ h1:after {
   display: inline-block;
   width: 25%;
   text-transform: uppercase;
+}
+@media all and (max-width: 1200px) {
+  .filter-selector-label {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 .filter-selector input.filter-selector-all:checked ~ label.filter-label-all,
 .filter-selector input.filter-selector-1:checked ~ label.filter-label-1,
@@ -2153,6 +2368,24 @@ h1:after {
   line-height: 32px;
   text-align: center;
 }
+@media all and (max-width: 768px) {
+  .filter-selector label {
+    margin: 10px auto;
+    width: 45%;
+  }
+}
+@media all and (max-width: 992px) {
+  .filter-selector label {
+    margin: 10px auto;
+    width: 30%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .filter-selector label {
+    margin: 10px auto;
+    width: 25%;
+  }
+}
 .filter-selector label:hover {
   background: #ef8214;
   color: #fff;
@@ -2172,9 +2405,14 @@ h1:after {
 }
 .footer {
   background: #fff;
-  padding: 70px 0 35px;
+  padding: 70px 20px 35px;
   color: #737373;
   font-family: "plutolight";
+}
+@media all and (max-width: 768px) {
+  .footer {
+    padding: 35px 20px;
+  }
 }
 .footer-list {
   font-size: 12px;
@@ -2188,6 +2426,7 @@ h1:after {
   background-color: #f0f2f5;
 }
 .terms .termsList {
+  padding: 0;
   margin: 0 !important;
   text-align: center;
 }
@@ -2281,6 +2520,15 @@ h1:after {
   width: 1920px;
   z-index: -1;
 }
+@media all and (max-width: 768px) {
+  .productBar {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .productBar > ul {
+    padding: 0;
+  }
+}
 .productBar a {
   display: block;
   text-decoration: none;
@@ -2288,7 +2536,7 @@ h1:after {
 .productBar a:hover {
   color: #fff;
 }
-.productBar li {
+.productBar li.productBar-item {
   background-color: #f0f2f5;
   display: inline-block;
   width: 20%;
@@ -2297,9 +2545,75 @@ h1:after {
   line-height: 48px;
   text-align: center;
 }
-.productBar li:hover {
+@media all and (max-width: 768px) {
+  .productBar li.productBar-item {
+    width: 80%;
+  }
+}
+.productBar li.productBar-item:hover {
   background: #008ac9;
   color: #fff;
+}
+.productOverview-head {
+  padding-bottom: 50px;
+}
+.productOverview-head:after {
+  content: "";
+  background: #008ac9;
+  display: block;
+  height: 3px;
+  width: 160px;
+}
+.productOverview-title {
+  color: #008ac9;
+  font-family: "plutocondbold";
+  font-size: 30px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.productOverview-subtitle {
+  padding-bottom: 40px;
+  color: #008ac9;
+  font-family: "plutocondbold";
+  font-size: 17px;
+}
+.productOverview-list li {
+  padding-bottom: 25px;
+}
+.productTable {
+  width: 100%;
+}
+.productTable tbody {
+  border-bottom: 10px solid #f6f7f9;
+}
+.productTable tbody tr:nth-child(odd) {
+  background-color: #f0f2f5;
+}
+.productTable tbody tr:nth-child(even) {
+  background-color: #f6f7f9;
+}
+.productTable thead {
+  border-top: 10px solid #f6f7f9;
+}
+.productTable thead tr {
+  background-color: #f6f7f9;
+}
+.productTable th,
+.productTable td {
+  border-left: 1px solid #cdced0;
+  padding: 32px 0;
+  width: 20%;
+}
+.productTable th:first-child,
+.productTable td:first-child {
+  border: 0;
+}
+.productTable th {
+  color: #008ac9;
+  text-transform: uppercase;
+}
+.productTable td {
+  text-align: center;
 }
 .topbanner {
   background-position: center;
@@ -2309,6 +2623,11 @@ h1:after {
   overflow: hidden;
   width: 100%;
 }
+@media all and (max-width: 768px) {
+  .topbanner {
+    height: 320px;
+  }
+}
 .topbanner-title {
   padding: 148px 0;
   width: 100%;
@@ -2317,6 +2636,12 @@ h1:after {
   font-size: 72px;
   text-align: center;
   text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+  .topbanner-title {
+    padding: 88px 0;
+    font-size: 38px;
+  }
 }
 .topbar {
   background-color: #5d004a;
@@ -2335,6 +2660,11 @@ h1:after {
   font-size: 36px;
   text-transform: uppercase;
 }
+@media all and (max-width: 768px) {
+  .section-adverseevent-title {
+    font-size: 28px;
+  }
+}
 .section-adverseevent-title:after {
   background-color: #fff;
   content: "";
@@ -2342,6 +2672,11 @@ h1:after {
   height: 3px;
   margin: 40px 0 60px 0;
   width: 160px;
+}
+@media all and (max-width: 768px) {
+  .section-adverseevent-title:after {
+    margin: 25px 0 40px 0;
+  }
 }
 .section-adverseevent a {
   text-decoration: underline;

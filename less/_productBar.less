@@ -1,5 +1,14 @@
 .productBar {
 
+	@media all and (max-width: @screen-sm) {
+		margin: 0 auto;
+		text-align: center;
+
+		& > ul {
+			padding: 0;
+		}
+	}
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -10,7 +19,7 @@
 		}
 	}
 
-	li {
+	li.productBar-item {
 		background-color: @graylight;
 		display: inline-block;
 		width: 20%;
@@ -19,6 +28,10 @@
 		font-size: 13px;
 		line-height: 48px;
 		text-align: center;
+
+		@media all and (max-width: @screen-sm) {
+			width: 80%;
+		}
 
 		&:hover {
 			background: @blue;

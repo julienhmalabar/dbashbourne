@@ -9,6 +9,12 @@
 	width: 25%;
 
 	text-transform: uppercase;
+
+	@media all and (max-width: @screen-lg) {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	
 }
 
 .filter-selector input.filter-selector-all:checked ~ label.filter-label-all,
@@ -38,6 +44,21 @@
 	cursor: pointer;
 	line-height: 32px;
 	text-align: center;
+
+	@media all and (max-width: @screen-sm) {
+		margin: 10px auto;
+		width: 45%;
+	}
+
+	@media all and (max-width: @screen-md) {
+		margin: 10px auto;
+		width: 30%;
+	}
+
+	@media all and (max-width: @screen-lg) {
+		margin: 10px auto;
+		width: 25%;
+	}
 
 	&:hover {
 		background: @orange;

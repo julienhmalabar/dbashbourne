@@ -11,10 +11,16 @@
 			background: @orange;
 			display: block;
 			padding: 0 20px;
+			position: relative;
 
 			font-size: 16px;
 			line-height: 65px;
 			text-decoration: none;
+
+			@media all and (max-width: @screen-sm) {
+				font-size: 14px;
+				line-height: 40px;
+			}
 
 			.collapsing-headingName, .collapsing-headingQuestion, .collapsing-headingArrow {
 				display: inline-block;
@@ -26,6 +32,27 @@
 				width: 180px;
 
 				text-transform: uppercase;
+			}
+
+			.collapsing-headingArrow {
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+
+				background-color: #fff;
+				width: 10px;
+				height: 10px;
+
+				.collapsed & {
+					background-color: @orange;
+				}
+			}
+
+			.collapsing-headingQuestion {
+				@media all and (max-width: @screen-sm) {
+					line-height: 20px;
+				}
 			}
 
 			&.collapsed {
@@ -54,6 +81,10 @@
 
 	.collapsing-body {
 		padding: 40px 80px 40px 100px;
+
+		@media all and (max-width: @screen-sm) {
+			padding: 20px;
+		}
 	}
 
 }

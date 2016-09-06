@@ -15,6 +15,10 @@ h1 {
 	font-size: 36px;
 	text-transform: uppercase;
 
+	@media all and (max-width: @screen-sm) {
+		font-size: 28px
+	}
+
 	&:after {
 		background-color: @orange;
 		content: "";
@@ -22,8 +26,65 @@ h1 {
 		height: 3px;
 		margin: 40px 0 60px 0;
 		width: 160px;
+
+		@media all and (max-width: @screen-sm) {
+			margin: 25px 0 40px 0;
+		}
 	}
 }
+
+h2 {
+	color: @blue;
+	font-size: 22px;
+	text-transform: uppercase;
+
+	&.h2--white {
+		color: #fff;
+	}
+}
+
+
+
+
+//
+// CUSTOM ITEMS
+ul.classic-list li {
+	list-style: none;
+
+	&:before {
+		padding-right: 15px;
+		
+		content: "\e900";
+		color: @blue;
+		font-family: 'ethypharmuk-picto' !important;
+		font-size: 10px;
+	}
+}
+
+ul.download-list li {
+	padding-bottom: 6px;
+
+	list-style: none;
+
+	&:before {
+		padding-right: 15px;
+		
+		content: "\e901";
+		color: #fff;
+		font-family: 'ethypharmuk-picto' !important;
+		font-size: 22px;
+	}
+
+	a:hover {
+		color: #fff; 
+	}
+}
+
+
+
+
+
+
 
 // 
 // SECTION
@@ -33,6 +94,8 @@ h1 {
 
 	&--blue {
 		background-color: @blue;
+
+		color: #fff;
 	}
 
 	&--gray {
@@ -45,6 +108,14 @@ h1 {
 
 	&--purple {
 		background-color: @purple;
+
+		color: #fff;
+	}
+
+
+	//
+	&--noTopPadding {
+		padding-top: 0;
 	}
 
 }

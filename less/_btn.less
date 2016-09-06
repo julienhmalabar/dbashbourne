@@ -44,3 +44,44 @@
 
 
 }
+
+.btn-huge {
+	border: 3px solid @blue;
+	display: block;
+	padding: 35px 60px;
+
+	color: @blue;
+	text-align: center;
+	text-decoration: none;
+
+	@media all and (max-width: @screen-md) {
+		padding: 35px 30px;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&-title {
+		padding-bottom: 20px;
+
+		text-transform: uppercase;
+	}
+
+	&-desc {
+		padding-bottom: 20px;
+
+		font-size: 13px;
+	}
+
+	&-link {
+		text-decoration: underline;
+	}
+}
+
+
+
+
+
+
+
