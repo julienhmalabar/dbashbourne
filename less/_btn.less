@@ -1,11 +1,20 @@
 .btn {
+	background-image: none;
 	border: 3px solid #fff;
+	display: inline-block;
+	margin-bottom: 0; // For input.btn
 	padding: 11px 25px;
 
 	color: #fff;
-	//line-height: 42px;
+	cursor: pointer;
+	font-family: @fontbold;
+	font-size: 16px;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
 
 	&:hover {
 		background: #fff;
@@ -14,8 +23,24 @@
 		text-decoration: none;
 	}
 
-	&-large {
-		padding: 11px 60px;
+
+	// COLORS
+	&-orange {
+		background-color: @orange;
+		border: 3px solid @orange;
+		color: #fff;
+
+		&:hover { background-color: transparent; color: @orange; }
 	}
+
+	// SIZE 
+	&-small {
+
+	}
+	&-large {
+		padding: 8px 90px;
+	}
+
+
 
 }

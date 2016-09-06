@@ -1,0 +1,59 @@
+.collapsing-faq {
+	margin-top: 35px;
+	
+	.collapsing-item {
+		border-bottom: 3px solid @orange;
+	}
+
+	.collapsing-heading {
+		
+		a {
+			background: @orange;
+			display: block;
+			padding: 0 20px;
+
+			font-size: 16px;
+			line-height: 65px;
+			text-decoration: none;
+
+			.collapsing-headingName, .collapsing-headingQuestion, .collapsing-headingArrow {
+				display: inline-block;
+
+				color: #fff;
+			}
+
+			.collapsing-headingName {
+				width: 180px;
+
+				text-transform: uppercase;
+			}
+
+			&.collapsed {
+				background: #fff;
+
+				.collapsing-headingName {
+
+					color: @graydark;
+				}
+
+				.collapsing-headingQuestion {
+					color: @orange;
+				}
+
+				.collapsing-headingArrow {
+					color: @orange;
+				}
+			}
+
+		}
+
+
+
+
+	}
+
+	.collapsing-body {
+		padding: 40px 80px 40px 100px;
+	}
+
+}
