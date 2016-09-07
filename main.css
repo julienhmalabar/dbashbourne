@@ -2701,6 +2701,38 @@ div.fancy-select ul.options li.hover {
   color: #008ac9;
   text-decoration: none;
 }
+.sidebar .sidebar-faq {
+  background-color: #ef8214;
+  padding: 30px 25px;
+  color: #fff;
+}
+.sidebar .sidebar-faq .line1 {
+  padding-bottom: 25px;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.sidebar .sidebar-faq .sidebar-faq-item {
+  border-bottom: 3px solid #fff;
+}
+.sidebar .sidebar-faq .sidebar-faq-item a {
+  display: block;
+  padding: 20px 40px 20px 0;
+  text-decoration: none;
+}
+.sidebar .sidebar-faq .sidebar-faq-item a:hover {
+  color: #fff;
+}
+.sidebar .sidebar-faq .knowmore {
+  padding-top: 30px;
+}
+.sidebar .sidebar-faq .knowmore a {
+  text-decoration: underline;
+}
+.sidebar .sidebar-faq .knowmore a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 .topbanner {
   background-position: center;
   background-repeat: no-repeat;
