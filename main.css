@@ -2009,6 +2009,12 @@ button.close {
 .txt-uppercase {
   text-transform: uppercase;
 }
+.txt-blue {
+  color: #008ac9;
+}
+.txt-purple {
+  color: #5d004a;
+}
 @font-face {
   font-family: 'ethypharmuk-picto';
   src: url('fonts/ethypharmuk-picto.ttf?9xyj7n') format('truetype'), url('fonts/ethypharmuk-picto.woff?9xyj7n') format('woff'), url('fonts/ethypharmuk-picto.svg?9xyj7n#ethypharmuk-picto') format('svg');
@@ -2225,6 +2231,15 @@ div.fancy-select ul.options li.hover {
 .btn-orange:hover {
   background-color: transparent;
   color: #ef8214;
+}
+.btn-blue {
+  background-color: #008ac9;
+  border: 3px solid #008ac9;
+  color: #fff;
+}
+.btn-blue:hover {
+  background-color: transparent;
+  color: #008ac9;
 }
 .btn-large {
   padding: 8px 90px;
@@ -2633,6 +2648,54 @@ div.fancy-select ul.options li.hover {
 .productTable td {
   text-align: center;
 }
+.sidebar .sidebar-costcalculator {
+  background-color: #008ac9;
+  margin-bottom: 30px;
+  padding: 30px 25px;
+  width: 100%;
+  color: #fff;
+}
+.sidebar .sidebar-costcalculator .line1 {
+  padding-bottom: 25px;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.sidebar .sidebar-costcalculator .line2 {
+  padding-bottom: 25px;
+}
+.sidebar .sidebar-costcalculator .line3 a {
+  text-decoration: underline;
+}
+.sidebar .sidebar-costcalculator .line3 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar .sidebar-prescribingInfos {
+  background-color: #f6f7f9;
+  background: url(img/sidebar-prescribinginfos.jpg) no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  padding: 30px 25px;
+  width: 100%;
+  color: #008ac9;
+}
+.sidebar .sidebar-prescribingInfos .line1 {
+  padding-bottom: 25px;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.sidebar .sidebar-prescribingInfos .line2 {
+  padding-bottom: 25px;
+}
+.sidebar .sidebar-prescribingInfos .line3 a {
+  text-decoration: underline;
+}
+.sidebar .sidebar-prescribingInfos .line3 a:hover {
+  color: #008ac9;
+  text-decoration: none;
+}
 .topbanner {
   background-position: center;
   background-repeat: no-repeat;
@@ -2695,6 +2758,33 @@ div.fancy-select ul.options li.hover {
   width: 100%;
   color: #fff;
 }
+.home-specific h1 {
+  color: #008ac9;
+}
+.home-specific h1:after {
+  background-color: #008ac9;
+}
+.home-specific-pro {
+  margin-top: -130px;
+}
+.home-specific-pro-img {
+  padding-bottom: 50px;
+  position: relative;
+  z-index: -1;
+}
+.home-specific-pro-item {
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+.home-specific-pro-item .line1 {
+  display: block;
+  padding-bottom: 5px;
+  color: #008ac9;
+  text-transform: uppercase;
+}
+.home-specific-pro-item .line2 {
+  display: block;
+}
 .section-adverseevent {
   color: #fff;
   font-size: 14px;
@@ -2742,8 +2832,15 @@ div.fancy-select ul.options li.hover {
   height: auto;
   width: 58px;
 }
+.section-homeAbout svg {
+  height: auto;
+  width: 60px;
+  fill: #5d004a;
+  stroke: #5d004a;
+}
 .section-homeAbout-line1 {
   padding-bottom: 50px;
+  color: #5d004a;
   font-family: "plutocondbold";
   font-size: 36px;
   text-transform: uppercase;
