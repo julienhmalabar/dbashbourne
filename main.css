@@ -2648,6 +2648,11 @@ div.fancy-select ul.options li.hover {
 .productTable td {
   text-align: center;
 }
+@media all and (max-width: 768px) {
+  .sidebar {
+    margin-top: 30px;
+  }
+}
 .sidebar .sidebar-costcalculator {
   background-color: #008ac9;
   margin-bottom: 30px;
@@ -2766,6 +2771,11 @@ div.fancy-select ul.options li.hover {
 }
 .home-specific-pro {
   margin-top: -130px;
+}
+@media all and (max-width: 768px) {
+  .home-specific-pro {
+    margin-top: 0;
+  }
 }
 .home-specific-pro-img {
   padding-bottom: 50px;
