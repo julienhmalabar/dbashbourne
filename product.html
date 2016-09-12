@@ -2,14 +2,64 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name=viewport>
   <title>Ethypharm UK - Product</title>
   <link rel="stylesheet" href="main.css">
-  
 </head>
 <body>
 
 	<!-- HEADER -->
-	<div class="container-fluid" w3-include-html="partials/header.html"></div>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-xs-12">
+			<header>
+
+				<!-- TOPBAR -->
+				<div class="row">
+					<!-- <div class="col-xs-12"> -->
+						<div class="topbar"></div>
+					<!-- </div> -->
+				</div>
+
+				<!-- LOGO + Contact link -->
+				<div class="row">
+					<div class="logobar">
+						<div class="nav-icon js-nav hidden-lg hidden-md"><i class="i-nav-icon"></i><i class="i-close hidden"></i></div>
+						<div class="logobar-logo"></div>
+						<div class="logobar-rightLink hidden-xs hidden-sm hidden-md"><a href="#">Contact</a></div>
+					</div>
+				</div>
+
+				<!-- DOUBLE NAV -->
+				<div class="row">
+					<div class="navbar-wrapper">
+						<nav class="navbar">
+							<ul class="nav-left">
+								<li class="nav-mobiletitle">Professionals</li>
+								<li><a href="#">Prescribing information</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Cost savings calculator</a></li>
+							</ul><!--
+						--><ul class="nav-right">
+								<li class="nav-mobiletitle">Patients</li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Frequently asked questions</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>	
+
+			</header>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="topbanner" style="background-image: url(img/banner-product.jpg);">
@@ -163,7 +213,7 @@
 
 				<div class="col-xs-12">
 
-					<table class="productTable">
+					<!-- <table class="productTable">
 						<thead>
 							<tr>
 								<th>Strenght</th>
@@ -203,7 +253,7 @@
 								<td>£33.60</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> -->
 
 				</div>
 
@@ -255,7 +305,8 @@
 		w3IncludeHTML();
 	</script>
 
-	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<!--<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/fancyselect.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

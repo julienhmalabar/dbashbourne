@@ -12,5 +12,26 @@ $(document).ready(function() {
 	//
 
 
+	//
+	// MOBILE NAV OPEN - CLOSE
+	$(".js-nav").click(function(e) {
+		e.preventDefault();
+
+		$(this).find("i").toggleClass("hidden");
+
+		if ($(".logobar").hasClass("nav-opened")) {
+
+			$(".logobar").removeClass("nav-opened");
+
+		} else {
+			$(".logobar").addClass("nav-opened");
+		}
+
+		//$(".logobar").addClass("nav-opened");
+
+		$(".navbar-wrapper").slideToggle( "slow" );
+
+	});
+
 
 });

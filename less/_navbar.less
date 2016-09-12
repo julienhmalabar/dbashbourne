@@ -1,3 +1,16 @@
+.navbar-wrapper {
+	@media all and (max-width: @screen-md) {
+		display: none;
+		left: 0;
+		overflow: auto;
+		position: absolute;
+		top: 108px;
+		width: 100%;
+
+	    z-index: 1;
+	}
+}
+
 .navbar {
 	margin: 0 auto;
     overflow: hidden;
@@ -6,6 +19,14 @@
 	text-align: center;
 	text-transform: uppercase;
 
+	@media all and (max-width: @screen-md) {
+		width: 100%;
+	}
+
+	@media all and (max-width: @screen-sm) {
+		width: 550px;
+	}
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -13,12 +34,18 @@
 
 	li {
 		display: inline-block;
-		padding: 0 16px;
+		padding: 0 14px;
 
 		font-family: @fontlight;
 		font-weight: 100;
 		font-size: 15px;
 		line-height: 60px;
+
+		@media all and (max-width: @screen-lg) {
+			padding: 0 5px;
+
+			font-size: 14px;
+		}
 	}
 
 	a {
@@ -56,7 +83,10 @@
 		display: inline-block;
 		padding-left: 40px;
 		position: relative;
-		//width: 35%;
+		
+		@media all and (max-width: @screen-lg) {
+		    padding-left: 12px;
+		}
 
 		&:before {
 			content: "";
@@ -85,5 +115,80 @@
 			z-index: -1;
 		}
 	}
+
+	.nav-left, .nav-right {
+
+		@media all and (max-width: @screen-md) {
+			height: 320px;
+			padding: 0;
+			width: 50%;
+
+			vertical-align: top;
+
+			&:before, &:after {
+				content: none;
+			}
+
+			li {
+				padding: 0 0 0 20px;
+				display: block;
+
+				text-align: left;
+			}
+
+		}
+
+		@media all and (max-width: @screen-sm) {
+			display: inline-block;
+			height: 550px;
+			width: 275px;
+		}
+	}
+
+
+	.nav-left .nav-mobiletitle {
+			background-color: @bluedark;
+	}
+
+	.nav-right .nav-mobiletitle {
+			background-color: @orangedark;
+	}
+
+
+	.nav-mobiletitle {
+		display: none;
+
+		font-family: @fontbold;
+		font-size: 16px;
+		line-height: 72px;
+
+		@media all and (max-width: @screen-md) {
+			display: block;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
