@@ -1,48 +1,90 @@
 .productTable {
+	position: relative;
+}
+
+
+
+.productTable-wrapper {
+
+	@media all and (max-width: @screen-sm) {
+		overflow: hidden;
+		margin-left: -25px;
+		margin-right: -25px;
+
+
+	}
+}
+
+.productTable-tools {
+	display: none;
+
+	@media all and (max-width: @screen-sm) {
+		display: block;
+
+		color: @grayregular;
+		cursor: pointer;
+		font-size: 32px;
+	
+		&--left {
+			position: absolute;
+			left: 35px;
+			top: 30px;
+
+		}
+
+		&--right {
+			position: absolute;
+			right: 20px;
+			top: 30px;
+		}
+	}
+
+}
+
+.productTable-table {
+	border-bottom: 10px solid @graylighter;
+	border-top: 10px solid @graylighter;
+	display: table;
 	width: 100%;
 
-	tbody {
-		border-bottom: 10px solid @graylighter;
-
-		tr {
-
-			&:nth-child(odd) {
-				background-color: @graylight;
-			}
-
-			&:nth-child(even) {
-				background-color: @graylighter;
-			}
-
-		}
-
+	@media all and (max-width: @screen-sm) {
+		display: block;
 	}
 
-	thead {
-		border-top: 10px solid @graylighter;
-
-		tr {
-			background-color: @graylighter;
-		}
-
-	}
-
-	th, td {
+	.productTable-column {
 		border-left: 1px solid #cdced0;
-		padding: 32px 0;
+		display: inline-block;
 		width: 20%;
+
+		@media all and (max-width: @screen-sm) {
+			border: 0;
+			width: 339px;
+		}
 
 		&:first-child {
 			border: 0;
 		}
 	}
 
-	th {
-		color: @blue;
-		text-transform: uppercase;
+	.productTable-cell {
+		//display: table-cell;
+		padding: 32px 0;
+
+		text-align: center;
+
+		&:first-child {
+			color: @blue;
+			text-transform: uppercase;
+		}
+
+		&:nth-child(odd) {
+			background-color: @graylighter;
+		}
+
+		&:nth-child(even) {
+			background-color: @graylight;
+		}
+
 	}
 
-	td {
-		text-align: center;
-	}
 }

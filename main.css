@@ -2765,9 +2765,6 @@ div.fancy-select ul.options li.hover {
 .logobar.nav-opened .nav-icon {
   color: #fff;
 }
-.logobar-rightLink {
-  float: right;
-}
 @media all and (max-width: 992px) {
   .navbar-wrapper {
     display: none;
@@ -3016,39 +3013,74 @@ div.fancy-select ul.options li.hover {
   padding-bottom: 25px;
 }
 .productTable {
+  position: relative;
+}
+@media all and (max-width: 768px) {
+  .productTable-wrapper {
+    overflow: hidden;
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
+.productTable-tools {
+  display: none;
+}
+@media all and (max-width: 768px) {
+  .productTable-tools {
+    display: block;
+    color: #bec0c2;
+    cursor: pointer;
+    font-size: 32px;
+  }
+  .productTable-tools--left {
+    position: absolute;
+    left: 35px;
+    top: 30px;
+  }
+  .productTable-tools--right {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+}
+.productTable-table {
+  border-bottom: 10px solid #f6f7f9;
+  border-top: 10px solid #f6f7f9;
+  display: table;
   width: 100%;
 }
-.productTable tbody {
-  border-bottom: 10px solid #f6f7f9;
+@media all and (max-width: 768px) {
+  .productTable-table {
+    display: block;
+  }
 }
-.productTable tbody tr:nth-child(odd) {
-  background-color: #f0f2f5;
-}
-.productTable tbody tr:nth-child(even) {
-  background-color: #f6f7f9;
-}
-.productTable thead {
-  border-top: 10px solid #f6f7f9;
-}
-.productTable thead tr {
-  background-color: #f6f7f9;
-}
-.productTable th,
-.productTable td {
+.productTable-table .productTable-column {
   border-left: 1px solid #cdced0;
-  padding: 32px 0;
+  display: inline-block;
   width: 20%;
 }
-.productTable th:first-child,
-.productTable td:first-child {
+@media all and (max-width: 768px) {
+  .productTable-table .productTable-column {
+    border: 0;
+    width: 339px;
+  }
+}
+.productTable-table .productTable-column:first-child {
   border: 0;
 }
-.productTable th {
+.productTable-table .productTable-cell {
+  padding: 32px 0;
+  text-align: center;
+}
+.productTable-table .productTable-cell:first-child {
   color: #008ac9;
   text-transform: uppercase;
 }
-.productTable td {
-  text-align: center;
+.productTable-table .productTable-cell:nth-child(odd) {
+  background-color: #f6f7f9;
+}
+.productTable-table .productTable-cell:nth-child(even) {
+  background-color: #f0f2f5;
 }
 @media all and (max-width: 768px) {
   .sidebar {
