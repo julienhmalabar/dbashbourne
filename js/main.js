@@ -1,7 +1,20 @@
 $(document).ready(function() {
 
 	// Select Box
-	$('.js-fancySelect').fancySelect();
+	// $('.js-fancySelect').fancySelect({
+	// 	includeBlank: true
+	// });
+
+	var select = $('.js-fancySelect');
+	select.fancySelect().on('change.fs', function() {
+	    var url = $(this).val();
+          if (url) {
+              window.location = url;
+          }
+          return false;
+	});
+
+	//
 
 
 	//
@@ -9,6 +22,13 @@ $(document).ready(function() {
 		var anchor = window.location.hash.replace("#", "");
 	    $(".collapse").collapse('hide');
 	    $("#" + anchor).collapse('show');
+	//
+
+	//
+	//
+	$(".js-footerCollapse").click(function() {
+		$(this).find("i").toggleClass("hidden");
+	})
 	//
 
 

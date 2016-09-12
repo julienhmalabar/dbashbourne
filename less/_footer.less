@@ -20,7 +20,25 @@
 		text-transform: uppercase;
 		position: relative;
 
-		i {
+		.footer-listTitle-arrows {
+		    float: right;
+		    padding-right: 30px;
+    
+    		color: @grayregular;
+    		font-size: 11px;
+    		text-decoration: none;
+
+    		@media all and (max-width: @screen-sm) {
+    			float: none;
+    			padding: 0 10px;
+    		}
+
+    		i {
+    			text-decoration: none;
+    		}
+		}
+
+		i.i-puce {
 			position: absolute;
 			left: -20px;
 			top: 3px;
@@ -28,6 +46,7 @@
 			color: @purple;
 			font-size: 11px;
 		}
+
 	}
 }
 
