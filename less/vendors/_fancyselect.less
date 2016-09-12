@@ -1,10 +1,7 @@
 div.fancy-select {
 	position: relative;
-	// font-weight: bold;
 	text-align: left;
 	text-transform: uppercase;
-	// font-size: 13px;
-	// color: #46565D;
 }
 
 div.fancy-select div.trigger {
@@ -93,13 +90,43 @@ div.fancy-select ul.options li {
 	transition: all 150ms ease-out;
 }
 
-// div.fancy-select ul.options li.selected {
-// 	background: rgba(43,134,134,0.3);
-// 	color: rgba(255,255,255,0.75);
-// }
-
 div.fancy-select ul.options li.hover {
 	background: @blue;
 
 	color: #fff;
 }
+
+
+
+
+.cost-calculator-select {
+
+	div.fancy-select div.trigger {
+		background-color: #fff;
+		border: 3px solid @blue;
+		padding: 15px 20px 10px;
+
+		color: @blue;
+
+		&:after {
+			border-top-color: @blue;
+		}
+
+		&:hover {
+			background-color: @blue;
+
+			color: #fff;
+
+			&:after {
+				border-top-color: #fff;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+

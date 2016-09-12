@@ -2012,12 +2012,15 @@ button.close {
 .txt-blue {
   color: #008ac9;
 }
+.txt-orange {
+  color: #ef8214;
+}
 .txt-purple {
   color: #5d004a;
 }
 @font-face {
   font-family: 'ethypharmuk-picto';
-  src: url('fonts/ethypharmuk-picto.ttf?9xyj7n') format('truetype'), url('fonts/ethypharmuk-picto.woff?9xyj7n') format('woff'), url('fonts/ethypharmuk-picto.svg?9xyj7n#ethypharmuk-picto') format('svg');
+  src: url('fonts/ethypharmuk-picto.ttf?rig3x7') format('truetype'), url('fonts/ethypharmuk-picto.woff?rig3x7') format('woff'), url('fonts/ethypharmuk-picto.svg?rig3x7#ethypharmuk-picto') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2033,6 +2036,21 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.i-arrow2-right:before {
+  content: "\e906";
+}
+.i-arrow-bottom:before {
+  content: "\e902";
+}
+.i-arrow-left:before {
+  content: "\e903";
+}
+.i-arrow-right:before {
+  content: "\e904";
+}
+.i-arrow-top:before {
+  content: "\e905";
 }
 .i-download:before {
   content: "\e901";
@@ -2066,6 +2084,12 @@ h1:after {
   h1:after {
     margin: 25px 0 40px 0;
   }
+}
+h1.h1--blue {
+  color: #008ac9;
+}
+h1.h1--blue:after {
+  background-color: #008ac9;
 }
 h2 {
   color: #008ac9;
@@ -2201,6 +2225,22 @@ div.fancy-select ul.options li.hover {
   background: #008ac9;
   color: #fff;
 }
+.cost-calculator-select div.fancy-select div.trigger {
+  background-color: #fff;
+  border: 3px solid #008ac9;
+  padding: 15px 20px 10px;
+  color: #008ac9;
+}
+.cost-calculator-select div.fancy-select div.trigger:after {
+  border-top-color: #008ac9;
+}
+.cost-calculator-select div.fancy-select div.trigger:hover {
+  background-color: #008ac9;
+  color: #fff;
+}
+.cost-calculator-select div.fancy-select div.trigger:hover:after {
+  border-top-color: #fff;
+}
 .btn {
   background-image: none;
   border: 3px solid #fff;
@@ -2287,7 +2327,7 @@ div.fancy-select ul.options li.hover {
   display: block;
   padding: 0 20px;
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 65px;
   text-decoration: none;
 }
@@ -2310,14 +2350,13 @@ div.fancy-select ul.options li.hover {
 .collapsing-faq .collapsing-heading a .collapsing-headingArrow {
   display: block;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: #fff;
-  width: 10px;
-  height: 10px;
+  right: 20px;
+  top: 0;
+  color: #fff;
+  font-family: 'ethypharmuk-picto';
 }
-.collapsed .collapsing-faq .collapsing-heading a .collapsing-headingArrow {
-  background-color: #ef8214;
+.collapsing-faq .collapsing-heading a .collapsing-headingArrow:before {
+  content: "\e905";
 }
 @media all and (max-width: 768px) {
   .collapsing-faq .collapsing-heading a .collapsing-headingQuestion {
@@ -2335,6 +2374,10 @@ div.fancy-select ul.options li.hover {
 }
 .collapsing-faq .collapsing-heading a.collapsed .collapsing-headingArrow {
   color: #ef8214;
+  font-family: 'ethypharmuk-picto';
+}
+.collapsing-faq .collapsing-heading a.collapsed .collapsing-headingArrow:before {
+  content: "\e902";
 }
 .collapsing-faq .collapsing-body {
   padding: 40px 80px 40px 100px;
@@ -2343,6 +2386,194 @@ div.fancy-select ul.options li.hover {
   .collapsing-faq .collapsing-body {
     padding: 20px;
   }
+}
+.collapsing-classic .collapsing-item {
+  border-bottom: 3px solid #ef8214;
+}
+.collapsing-classic .collapsing-heading a {
+  background: #ef8214;
+  display: block;
+  padding: 0 20px;
+  position: relative;
+  font-size: 15px;
+  line-height: 65px;
+  text-decoration: none;
+}
+@media all and (max-width: 768px) {
+  .collapsing-classic .collapsing-heading a {
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+.collapsing-classic .collapsing-heading a .collapsing-headingName,
+.collapsing-classic .collapsing-heading a .collapsing-headingQuestion,
+.collapsing-classic .collapsing-heading a .collapsing-headingArrow {
+  display: inline-block;
+  color: #fff;
+}
+.collapsing-classic .collapsing-heading a .collapsing-headingName {
+  width: 180px;
+  text-transform: uppercase;
+}
+.collapsing-classic .collapsing-heading a .collapsing-headingArrow {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: #fff;
+  font-family: 'ethypharmuk-picto';
+}
+.collapsing-classic .collapsing-heading a .collapsing-headingArrow:before {
+  content: "\e905";
+}
+@media all and (max-width: 768px) {
+  .collapsing-classic .collapsing-heading a .collapsing-headingQuestion {
+    line-height: 20px;
+  }
+}
+.collapsing-classic .collapsing-heading a.collapsed {
+  background: #fff;
+}
+.collapsing-classic .collapsing-heading a.collapsed .collapsing-headingName {
+  color: #737373;
+}
+.collapsing-classic .collapsing-heading a.collapsed .collapsing-headingQuestion {
+  color: #ef8214;
+}
+.collapsing-classic .collapsing-heading a.collapsed .collapsing-headingArrow {
+  color: #ef8214;
+  font-family: 'ethypharmuk-picto';
+}
+.collapsing-classic .collapsing-heading a.collapsed .collapsing-headingArrow:before {
+  content: "\e902";
+}
+.collapsing-classic .collapsing-body {
+  padding: 35px 20px;
+}
+@media all and (max-width: 768px) {
+}
+.collapsing-classic .collapsing-body .collapsing-notes {
+  padding-bottom: 40px;
+  color: #737373;
+  font-size: 11px;
+}
+.cost-calculator-titleselect {
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+.cost-calculator-separator {
+  padding-top: 40px;
+  text-align: center;
+}
+.cost-calculator-separator i {
+  color: #008ac9;
+  font-size: 36px;
+}
+.cost-calculator-totalpricing {
+  padding: 40px 0 70px;
+}
+.cost-calculator-totaltext {
+  display: inline-block;
+  width: 55%;
+  vertical-align: middle;
+}
+.cost-calculator-totaltext .line1 {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.cost-calculator-totaltext .line2 {
+  display: block;
+  font-size: 17px;
+}
+.cost-calculator-pricing {
+  display: inline-block;
+  width: 42%;
+  color: #008ac9;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: middle;
+}
+.cost-calculator-wrappertable {
+  overflow: hidden;
+  position: relative;
+}
+.cost-calculator-table {
+  display: table;
+  border-bottom: 8px solid #33a1d4;
+  border-top: 8px solid #33a1d4;
+  margin: auto;
+  max-width: 1100px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.cost-calculator-table .cost-calculator-tableHead {
+  background-color: #33a1d4;
+  display: table-row;
+}
+.cost-calculator-table .cost-calculator-tableHead:after {
+  background: #33a1d4;
+  content: "";
+  display: block;
+  height: 70px;
+  left: -250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2100px;
+  z-index: -1;
+}
+.cost-calculator-table .cost-calculator-tableHead .cost-calculator-tableCell {
+  border-left: 1px solid #99d0ea;
+  font-size: 16px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+.cost-calculator-table .cost-calculator-tableHead .cost-calculator-tableCell:first-child {
+  border-left: 0;
+}
+.cost-calculator-table .cost-calculator-tableOdd {
+  background-color: #008ac9;
+  display: table-row;
+}
+.cost-calculator-table .cost-calculator-tableOdd:after {
+  background: #008ac9;
+  content: "";
+  display: block;
+  height: 62px;
+  left: -250px;
+  position: absolute;
+  right: 0;
+  width: 2100px;
+  z-index: -1;
+}
+.cost-calculator-table .cost-calculator-tableEven {
+  background-color: #33a1d4;
+  display: table-row;
+}
+.cost-calculator-table .cost-calculator-tableEven:after {
+  background: #33a1d4;
+  content: "";
+  display: block;
+  height: 70px;
+  left: -250px;
+  position: absolute;
+  right: 0;
+  width: 2100px;
+  z-index: -1;
+}
+.cost-calculator-table .cost-calculator-tableCell {
+  border-left: 1px solid #99d0ea;
+  display: table-cell;
+  line-height: 62px;
+  text-align: center;
+}
+.cost-calculator-table .cost-calculator-tableCell:first-child {
+  border-left: 0;
 }
 .filter-selector {
   padding-bottom: 110px;
@@ -2543,6 +2774,33 @@ div.fancy-select ul.options li.hover {
   width: 1920px;
   z-index: -1;
 }
+.prescribing-item {
+  background-color: #008ac9;
+  margin: 0 0 30px 0;
+  padding: 30px 25px;
+  color: #fff;
+  text-align: center;
+}
+.prescribing-item .prescribing-item-title {
+  padding-bottom: 15px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.prescribing-item .prescribing-item-line1,
+.prescribing-item .prescribing-item-line2 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.prescribing-item .prescribing-item-line1 a,
+.prescribing-item .prescribing-item-line2 a {
+  color: #fff;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+.prescribing-item .prescribing-item-line1 a:hover,
+.prescribing-item .prescribing-item-line2 a:hover {
+  text-decoration: none;
+}
 @media all and (max-width: 768px) {
   .productBar {
     margin: 0 auto;
@@ -2718,10 +2976,22 @@ div.fancy-select ul.options li.hover {
 .sidebar .sidebar-faq .sidebar-faq-item a {
   display: block;
   padding: 20px 40px 20px 0;
+  position: relative;
   text-decoration: none;
 }
 .sidebar .sidebar-faq .sidebar-faq-item a:hover {
   color: #fff;
+}
+.sidebar .sidebar-faq .sidebar-faq-item a:before {
+  content: "\e904";
+}
+.sidebar .sidebar-faq .sidebar-faq-item a:before {
+  margin-top: -10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  color: #fff;
+  font-family: 'ethypharmuk-picto';
 }
 .sidebar .sidebar-faq .knowmore {
   padding-top: 30px;
@@ -2981,4 +3251,28 @@ div.fancy-select ul.options li.hover {
 .section-searchmore-subtitle {
   padding-bottom: 30px;
   font-size: 16px;
+}
+.m-top50 {
+  margin-top: 50px;
+}
+.m-right50 {
+  margin-right: 50px;
+}
+.m-bottom50 {
+  margin-bottom: 50px;
+}
+.m-left50 {
+  margin-left: 50px;
+}
+.m-top75 {
+  margin-top: 75px;
+}
+.m-right75 {
+  margin-right: 75px;
+}
+.m-bottom75 {
+  margin-bottom: 75px;
+}
+.m-left75 {
+  margin-left: 75px;
 }
