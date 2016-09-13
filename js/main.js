@@ -90,6 +90,12 @@ $(document).ready(function() {
 	});
 
 
+	//
+	// STICKY JS
+	$(".js-sticky").sticky({topSpacing:0});
+	//
+
+
 });
 
 
