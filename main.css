@@ -2774,7 +2774,10 @@ div.fancy-select ul.options li.hover {
 .logobar.nav-opened .nav-icon {
   color: #fff;
 }
-@media all and (max-width: 992px) {
+.navbar-wrapper {
+  display: block;
+}
+@media all and (max-width: 991px) {
   .navbar-wrapper {
     display: none;
     left: 0;
@@ -2792,7 +2795,12 @@ div.fancy-select ul.options li.hover {
   text-align: center;
   text-transform: uppercase;
 }
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
+  .navbar {
+    width: 100%;
+  }
+}
+@media all and (max-width: 991px) {
   .navbar {
     width: 100%;
   }
@@ -2814,10 +2822,15 @@ div.fancy-select ul.options li.hover {
   font-size: 15px;
   line-height: 60px;
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1330px) {
   .navbar li {
     padding: 0 5px;
     font-size: 14px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .navbar li {
+    font-size: 12px;
   }
 }
 .navbar a {
@@ -2878,7 +2891,7 @@ div.fancy-select ul.options li.hover {
   width: 1920px;
   z-index: -1;
 }
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
   .navbar .nav-left,
   .navbar .nav-right {
     height: 320px;
@@ -2899,11 +2912,17 @@ div.fancy-select ul.options li.hover {
     text-align: left;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 991px) {
   .navbar .nav-left,
   .navbar .nav-right {
     display: inline-block;
     height: 550px;
+    width: 50%;
+  }
+}
+@media all and (max-width: 768px) {
+  .navbar .nav-left,
+  .navbar .nav-right {
     width: 275px;
   }
 }
@@ -2919,7 +2938,7 @@ div.fancy-select ul.options li.hover {
   font-size: 16px;
   line-height: 72px;
 }
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
   .navbar .nav-mobiletitle {
     display: block;
   }
@@ -3223,21 +3242,94 @@ div.fancy-select ul.options li.hover {
   height: 590px;
   position: relative;
 }
+@media all and (max-width: 768px) {
+  .topbanner-home {
+    height: auto;
+  }
+}
 .topbanner-home .topbanner-home-block {
-  width: 50%;
+  background: url(img/banner-home.jpg) no-repeat;
+  background-position: 43%;
   height: 100%;
+  position: relative;
+  width: 100%;
   color: #fff;
   text-align: center;
 }
+@media all and (max-width: 1600px) {
+  .topbanner-home .topbanner-home-block {
+    background-position: 45%;
+  }
+}
+@media all and (max-width: 1400px) {
+  .topbanner-home .topbanner-home-block {
+    background-position: 46%;
+  }
+}
+@media all and (max-width: 1300px) {
+  .topbanner-home .topbanner-home-block {
+    background-position: 50%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .topbanner-home .topbanner-home-block {
+    background-position: 47%;
+  }
+}
+@media all and (max-width: 1100px) {
+  .topbanner-home .topbanner-home-block {
+    background-position: 50%;
+  }
+}
 .topbanner-home .topbanner-home-left {
-  background: url(img/home-left.jpg) no-repeat;
-  background-size: cover;
   display: inline-block;
+  position: absolute;
+  left: 15%;
+}
+@media all and (max-width: 1400px) {
+  .topbanner-home .topbanner-home-left {
+    left: 12%;
+  }
+}
+@media all and (max-width: 1300px) {
+  .topbanner-home .topbanner-home-left {
+    left: 13%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .topbanner-home .topbanner-home-left {
+    left: 12%;
+  }
+}
+@media all and (max-width: 1100px) {
+  .topbanner-home .topbanner-home-left {
+    left: 12%;
+  }
 }
 .topbanner-home .topbanner-home-right {
-  background: url(img/home-right.jpg) no-repeat;
-  background-size: cover;
   display: inline-block;
+  position: absolute;
+  right: 15%;
+}
+@media all and (max-width: 1400px) {
+  .topbanner-home .topbanner-home-right {
+    right: 12%;
+  }
+}
+@media all and (max-width: 1300px) {
+  .topbanner-home .topbanner-home-right {
+    right: 13%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .topbanner-home .topbanner-home-right {
+    right: 8%;
+  }
+}
+@media all and (max-width: 1100px) {
+  .topbanner-home .topbanner-home-right {
+    right: 7%;
+  }
 }
 .topbanner-home .topbanner-home-block-title {
   padding: 200px 0 45px 0;
@@ -3245,6 +3337,51 @@ div.fancy-select ul.options li.hover {
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
+}
+.topbanner-home .topbanner-responsive-block {
+  overflow: hidden;
+  width: 100%;
+}
+.topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  vertical-align: top;
+}
+@media all and (max-width: 768px) {
+  .topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col {
+    display: block;
+    width: 100%;
+  }
+}
+.topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col .topbanner-responsive-block-cta {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  text-align: center;
+}
+@media all and (max-width: 992px) {
+  .topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col .topbanner-responsive-block-cta .topbanner-home-block-title {
+    padding: 150px 0 45px 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 480px) {
+  .topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col .topbanner-responsive-block-cta .topbanner-home-block-title {
+    padding: 150px 0 45px 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 360px) {
+  .topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col .topbanner-responsive-block-cta .topbanner-home-block-title {
+    padding: 90px 0 45px 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 .topbar {
   background-color: #5d004a;

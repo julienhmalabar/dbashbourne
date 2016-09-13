@@ -9,17 +9,91 @@
 <body>
 
 	<!-- HEADER -->
-	<div class="container-fluid" w3-include-html="partials/header.html"></div>
+	<!-- <div class="container-fluid" w3-include-html="partials/header.html"></div> -->
+	<!-- HEADER -->
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-xs-12">
+			<header>
+
+				<!-- TOPBAR -->
+				<div class="row">
+					<!-- <div class="col-xs-12"> -->
+						<div class="topbar"></div>
+					<!-- </div> -->
+				</div>
+
+				<!-- LOGO + Contact link -->
+				<div class="row">
+					<div class="logobar">
+						<div class="nav-icon js-nav hidden-lg hidden-md"><i class="i-nav-icon"></i><i class="i-close hidden"></i></div>
+						<div class="logobar-logo"></div>
+					</div>
+				</div>
+
+				<!-- DOUBLE NAV -->
+				<div class="row">
+					<div class="navbar-wrapper">
+						<nav class="navbar">
+							<ul class="nav-left">
+								<li class="nav-mobiletitle">Professionals</li>
+								<li><a href="#">Prescribing information</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Cost savings calculator</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul><!--
+						--><ul class="nav-right">
+								<li class="nav-mobiletitle">Patients</li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Frequently asked questions</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>	
+
+			</header>
+			</div>
+
+		</div>
+
+	</div>
 	
 	<div class="topbanner-home">
-		<div class="topbanner-home-block topbanner-home-left">
-			<div class="topbanner-home-block-title">Healthcare<br>professionals</div>
-			<a href="#" class="btn btn-large">Discover</a>
-		</div><!-- 
-		 --><div class="topbanner-home-block topbanner-home-right">
-		 	<div class="topbanner-home-block-title">Patients & Members<br>of the public</div>
-			<a href="#" class="btn btn-large">Discover</a>
+
+		<div class="topbanner-home-block hidden-sm hidden-xs">
+
+			<div class="topbanner-home-left">
+				<div class="topbanner-home-block-title">Healthcare<br>professionals</div>
+				<a href="homepage-pro.html" class="btn btn-large">Discover</a>
+			</div><!-- 
+			 --><div class="topbanner-home-right">
+		 		<div class="topbanner-home-block-title">Patients & Members<br>of the public</div>
+				<a href="homepage-public.html" class="btn btn-large">Discover</a>
+			</div>
+
 		</div>
+
+
+		<div class="topbanner-responsive-block hidden-md hidden-lg">
+			<div class="topbanner-responsive-block-col">
+				<img src="img/banner-home-left.jpg" class="img-responsive">
+				<div class="topbanner-responsive-block-cta">
+					<div class="topbanner-home-block-title">Healthcare<br>professionals</div>
+					<a href="homepage-pro.html" class="btn btn-large">Discover</a>
+				</div>
+			</div><!-- 
+		 --><div class="topbanner-responsive-block-col">
+				<img src="img/banner-home-right.jpg" class="img-responsive">
+				<div class="topbanner-responsive-block-cta">
+					<div class="topbanner-home-block-title">Patients & Members<br>of the public</div>
+					<a href="homepage-public.html" class="btn btn-large">Discover</a>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
 
 
@@ -153,7 +227,7 @@
 		w3IncludeHTML();
 	</script>
 
-	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/fancyselect.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
