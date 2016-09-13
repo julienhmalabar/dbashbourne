@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
 	// Select Box
-	var select = $('.js-fancySelect');
+	$('.js-fancySelect').fancySelect();
+	
+	var select = $('.js-fancySelectUrl');
 	select.fancySelect().on('change.fs', function() {
 	    var url = $(this).val();
           if (url) {
@@ -38,18 +40,10 @@ $(document).ready(function() {
 
 			$(".productTable-column").css("width", windowWidth);
 
-			var calcx5 = windowWidth*5;
+			var nbCols = $(".productTable-column").length;
+
+			var calcx5 = windowWidth * nbCols;
 			$(".productTable-table").css("width", calcx5);
-
-
-
-			// $(window).resize(function() {
-			// 	$(".productTable-column").css("width", windowWidth);
-
-			// 	var calcx5 = windowWidth*5;
-			// 	$(".productTable-table").css("width", calcx5);
-			// });
-
 
 
 			//
@@ -100,12 +94,27 @@ $(document).ready(function() {
 
 
 
+// Resize
+
+
 $(window).resize(function() {
+
 	var windowWidth2 = $(window).width();
-	console.log("windowWidth2 : " + windowWidth2);
 
-	$(".productTable-column").css("width", windowWidth2+" !important");
+	if (windowWidth2 < 768) {
+		
+		var NbCols = $(".productTable-column").length;
 
-	var calcx5 = windowWidth2*5;
-	$(".productTable-table").css("width", calcx5);
+
+		$(".productTable-column").css("width", windowWidth2);
+
+		var calcx5 = windowWidth2 * NbCols;
+		$(".productTable-table").css("width", calcx5);
+
+	}
+
 });
+
+
+
+
