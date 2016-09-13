@@ -3451,6 +3451,38 @@ div.fancy-select ul.options li.hover {
 .home-specific-pro-item .line2 {
   display: block;
 }
+.home-specific-public h1 {
+  color: #ef8214;
+}
+.home-specific-public h1:after {
+  background-color: #ef8214;
+}
+.home-specific-public-content {
+  margin-top: -130px;
+}
+@media all and (max-width: 768px) {
+  .home-specific-public-content {
+    margin-top: 0;
+  }
+}
+.home-specific-public-content-img {
+  padding-bottom: 50px;
+  position: relative;
+  z-index: -1;
+}
+.home-specific-public-content-item {
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+.home-specific-public-content-item .line1 {
+  display: block;
+  padding-bottom: 5px;
+  color: #ef8214;
+  text-transform: uppercase;
+}
+.home-specific-public-content-item .line2 {
+  display: block;
+}
 .section-adverseevent {
   color: #fff;
   font-size: 14px;
