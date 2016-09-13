@@ -97,21 +97,17 @@ $(document).ready(function() {
 // Resize
 
 
-$(window).resize(function() {
+jQuery(window).resize(function() {
 
-	var windowWidth2 = $(window).width();
-
-	if (windowWidth2 < 768) {
-		
-		var NbCols = $(".productTable-column").length;
-
-
-		$(".productTable-column").css("width", windowWidth2);
-
-		var calcx5 = windowWidth2 * NbCols;
-		$(".productTable-table").css("width", calcx5);
-
-	}
+	if ( $(window).width() < 992 ) {
+            //$(".navbar-wrapper").css("display","none");
+        console.log($(window).width());
+        $(".navbar-wrapper").css("display","none");
+    }
+    else {
+    	$(".navbar-wrapper").css("display","block");
+    	$(".nav-opened").removeClass("nav-opened");
+    }
 
 });
 

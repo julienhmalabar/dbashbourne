@@ -1,5 +1,7 @@
 .navbar-wrapper {
-	@media all and (max-width: @screen-md) {
+	display: block;
+
+	@media all and (max-width: @screen-sm-max) {
 		display: none;
 		left: 0;
 		overflow: auto;
@@ -19,7 +21,11 @@
 	text-align: center;
 	text-transform: uppercase;
 
-	@media all and (max-width: @screen-md) {
+	@media all and (max-width: @screen-sm-max) {
+		width: 100%;
+	}
+
+	@media all and (max-width: @screen-sm-max) {
 		width: 100%;
 	}
 
@@ -41,10 +47,14 @@
 		font-size: 15px;
 		line-height: 60px;
 
-		@media all and (max-width: @screen-lg) {
+		@media all and (max-width: 1330px) {
 			padding: 0 5px;
 
 			font-size: 14px;
+		}
+
+		@media all and (max-width: 1100px) {
+		    font-size: 12px;
 		}
 	}
 
@@ -118,7 +128,7 @@
 
 	.nav-left, .nav-right {
 
-		@media all and (max-width: @screen-md) {
+		@media all and (max-width: @screen-sm-max) {
 			height: 320px;
 			padding: 0;
 			width: 50%;
@@ -138,9 +148,13 @@
 
 		}
 
-		@media all and (max-width: @screen-sm) {
+		@media all and (max-width: @screen-sm-max) {
 			display: inline-block;
 			height: 550px;
+			width: 50%;
+		}
+
+		@media all and (max-width: @screen-sm) {
 			width: 275px;
 		}
 	}
@@ -162,7 +176,7 @@
 		font-size: 16px;
 		line-height: 72px;
 
-		@media all and (max-width: @screen-md) {
+		@media all and (max-width: @screen-sm-max) {
 			display: block;
 		}
 
