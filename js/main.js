@@ -37,15 +37,24 @@ $(document).ready(function() {
 		if ($(window).width() < 768) {
 
 			// On donne la width du browser à chaque colonnedu tableau 
-			$(".productTable-column").css("width", $(window).width());
+			//$(".productTable-column").css("width", $(window).width());
+			$(".js-table-column").css("width", $(window).width());
 
 			// On compte le nombre de colonnes qu'on aura à slider
-			var nbCols = $(".productTable-column").length;
+			var nbCols = $(".js-table-column").length;
 
 			// On donne la taille totale au conteneur
 			// -- soit "largeur du browser" X "nombre de colonnes à slider"
-			var calcx5 = $(window).width() * nbCols;
-			$(".productTable-table").css("width", calcx5);
+			var calcx = $(window).width() * nbCols;
+			$(".js-table-table").css("width", calcx);
+
+			// Fallback for CSC Table
+			colsclean = nbCols - 1;
+			
+			var calcx1 = $(window).width() * colsclean;
+			$(".js-table-tablex1").css("width", calcx1);
+
+			//console.log("calcx1" + calcx1);
 
 		}
 		
@@ -53,13 +62,13 @@ $(document).ready(function() {
 		// Slide between columns in responsive table
 		$('.js-nextColumn').click(function(e) {
 	        e.preventDefault();
-	        $('.productTable-wrapper').animate(
+	        $('.js-table-wrapper').animate(
 	        	{ scrollLeft:'+='+$(window).width() }, 'slow'
 	        );        
 	    });
 	    $('.js-prevColumn').click(function(e) {
 	        e.preventDefault();
-	        $('.productTable-wrapper').animate(
+	        $('.js-table-wrapper').animate(
 	        	{ scrollLeft:'-='+$(window).width() }, 'slow'
 	        );        
 	    });
@@ -112,7 +121,6 @@ jQuery(window).resize(function() {
 	// Responsive NAV
 	if ( $(window).width() < 992 ) {
             //$(".navbar-wrapper").css("display","none");
-        console.log($(window).width());
         $(".navbar-wrapper").css("display","none");
     }
     else {
@@ -126,22 +134,29 @@ jQuery(window).resize(function() {
     	if ( $(window).width() < 768 ) {
 
     		// On donne la width du browser à chaque colonne du tableau 
-			$(".productTable-column").css("width", $(window).width());
+			$(".js-table-column").css("width", $(window).width());
 
 			// On compte le nombre de colonnes qu'on aura à slider
-			var nbCols = $(".productTable-column").length;
+			var nbCols = $(".js-table-column").length;
 
 			// On donne la taille totale au conteneur
 			// -- soit "largeur du browser" X "nombre de colonnes à slider"
-			var calcx5 = $(window).width() * nbCols;
-			$(".productTable-table").css("width", calcx5);
+			var calcx = $(window).width() * nbCols;
+			$(".js-table-table").css("width", calcx);
+
+
+			colsclean = nbCols - 1;
+
+			var calcx1 = $(window).width() * colsclean;
+			$(".js-table-tablex1").css("width", calcx1);
     	}
     	else {
-    		var nbCols2 = $(".productTable-column").length;
+    		var nbCols2 = $(".js-table-column").length;
     		var calcsize = 100 / nbCols2;
 
-    		$(".productTable-column").css("width", calcsize+"%");
-    		$(".productTable-table").css("width", "100%");
+    		$(".js-table-column").css("width", calcsize+"%");
+    		$(".js-table-table").css("width", "100%");
+    		$(".js-table-tablex1").css("width", "100%");
     	}
     //
 
