@@ -2317,6 +2317,7 @@ div.fancy-select ul.options li.hover {
 .btn-huge {
   border: 3px solid #008ac9;
   display: block;
+  margin: 0 0 20px 0;
   padding: 35px 60px;
   color: #008ac9;
   text-align: center;
@@ -3072,23 +3073,30 @@ div.fancy-select ul.options li.hover {
   font-family: "plutocondbold";
   font-size: 17px;
 }
+@media all and (max-width: 768px) {
+  .productOverview-list {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+}
 .productOverview-list li {
   padding-bottom: 25px;
 }
 .productTable {
+  display: block;
+  float: left;
   position: relative;
+  width: 100%;
 }
 @media all and (max-width: 768px) {
   .productTable-wrapper {
     overflow: hidden;
-    margin-left: -25px;
-    margin-right: -25px;
   }
 }
 .productTable-tools {
   display: none;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .productTable-tools {
     display: block;
     color: #bec0c2;
@@ -3244,6 +3252,104 @@ div.fancy-select ul.options li.hover {
 .sidebar .sidebar-faq .knowmore a:hover {
   color: #fff;
   text-decoration: none;
+}
+#slider .carousel-indicators li {
+  background: transparent;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #fff;
+}
+#slider .carousel-indicators li span {
+  background-color: transparent;
+  border-radius: 50px;
+  display: block;
+  height: 12px;
+  margin: 1px;
+  width: 12px;
+}
+#slider .carousel-indicators li.active {
+  margin: 1px;
+}
+#slider .carousel-indicators li.active span {
+  background-color: #fff;
+}
+#slider .carousel-inner {
+  height: 400px;
+}
+#slider .carousel-inner .item {
+  height: 400px;
+}
+#slider .carousel-inner .slider-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+#slider .carousel-inner .slider-title {
+  bottom: 0;
+  display: table;
+  height: 200px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 960px;
+  color: #fff;
+  font-family: "plutocondbold";
+  font-size: 72px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media all and (max-width: 992px) {
+  #slider .carousel-inner .slider-title {
+    width: 500px;
+    font-size: 38px;
+  }
+}
+@media all and (max-width: 768px) {
+  #slider .carousel-inner .slider-title {
+    width: 300px;
+    font-size: 28px;
+  }
+}
+#slider .carousel-inner .slider-title p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#slider .slider-controls {
+  left: 0;
+  margin-top: -21px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+@media all and (max-width: 480px) {
+  #slider .slider-controls {
+    top: auto;
+    bottom: 53px;
+  }
+}
+#slider .slider-controls a {
+  text-decoration: none;
+}
+#slider .slider-controls a i {
+  color: #fff;
+  font-size: 42px;
+}
+@media all and (max-width: 768px) {
+  #slider .slider-controls a i {
+    font-size: 28px;
+  }
+}
+#slider .slider-controls--left {
+  position: absolute;
+  left: 30px;
+}
+#slider .slider-controls--right {
+  position: absolute;
+  right: 30px;
 }
 .topbanner {
   background-position: center;

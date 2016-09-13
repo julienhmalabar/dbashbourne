@@ -1,5 +1,8 @@
 .productTable {
+	display: block;
+	float: left;
 	position: relative;
+    width: 100%;
 }
 
 
@@ -8,17 +11,13 @@
 
 	@media all and (max-width: @screen-sm) {
 		overflow: hidden;
-		margin-left: -25px;
-		margin-right: -25px;
-
-
 	}
 }
 
 .productTable-tools {
 	display: none;
 
-	@media all and (max-width: @screen-sm) {
+	@media all and (max-width: @screen-xs-max) {
 		display: block;
 
 		color: @grayregular;

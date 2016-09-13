@@ -32,35 +32,38 @@ $(document).ready(function() {
 	//
 	// Responsive table to SLIDER table
 
-		
-		// VARS
-		var windowWidth = $(window).width();
+		// Au chargement de la page
 
-		if (windowWidth < 768) {
+		if ($(window).width() < 768) {
 
-			$(".productTable-column").css("width", windowWidth);
+			// On donne la width du browser à chaque colonnedu tableau 
+			$(".productTable-column").css("width", $(window).width());
 
+			// On compte le nombre de colonnes qu'on aura à slider
 			var nbCols = $(".productTable-column").length;
 
-			var calcx5 = windowWidth * nbCols;
+			// On donne la taille totale au conteneur
+			// -- soit "largeur du browser" X "nombre de colonnes à slider"
+			var calcx5 = $(window).width() * nbCols;
 			$(".productTable-table").css("width", calcx5);
 
-
-			//
-			$('.js-nextColumn').click(function(e) {
-		        e.preventDefault();
-		        $('.productTable-wrapper').animate(
-		        	{ scrollLeft:'+='+windowWidth }, 'slow'
-		        );        
-		    });
-		    $('.js-prevColumn').click(function(e) {
-		        e.preventDefault();
-		        $('.productTable-wrapper').animate(
-		        	{ scrollLeft:'-='+windowWidth }, 'slow'
-		        );        
-		    });
-
 		}
+		
+		//
+		// Slide between columns in responsive table
+		$('.js-nextColumn').click(function(e) {
+	        e.preventDefault();
+	        $('.productTable-wrapper').animate(
+	        	{ scrollLeft:'+='+$(window).width() }, 'slow'
+	        );        
+	    });
+	    $('.js-prevColumn').click(function(e) {
+	        e.preventDefault();
+	        $('.productTable-wrapper').animate(
+	        	{ scrollLeft:'-='+$(window).width() }, 'slow'
+	        );        
+	    });
+
 		
 	
 
@@ -105,6 +108,8 @@ $(document).ready(function() {
 
 jQuery(window).resize(function() {
 
+	//
+	// Responsive NAV
 	if ( $(window).width() < 992 ) {
             //$(".navbar-wrapper").css("display","none");
         console.log($(window).width());
@@ -114,8 +119,43 @@ jQuery(window).resize(function() {
     	$(".navbar-wrapper").css("display","block");
     	$(".nav-opened").removeClass("nav-opened");
     }
+    //
+
+    //
+    //
+    	if ( $(window).width() < 768 ) {
+
+    		// On donne la width du browser à chaque colonne du tableau 
+			$(".productTable-column").css("width", $(window).width());
+
+			// On compte le nombre de colonnes qu'on aura à slider
+			var nbCols = $(".productTable-column").length;
+
+			// On donne la taille totale au conteneur
+			// -- soit "largeur du browser" X "nombre de colonnes à slider"
+			var calcx5 = $(window).width() * nbCols;
+			$(".productTable-table").css("width", calcx5);
+    	}
+    	else {
+    		var nbCols2 = $(".productTable-column").length;
+    		var calcsize = 100 / nbCols2;
+
+    		$(".productTable-column").css("width", calcsize+"%");
+    		$(".productTable-table").css("width", "100%");
+    	}
+    //
 
 });
+
+
+
+
+
+
+
+
+
+
 
 
 
