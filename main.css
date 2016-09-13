@@ -2826,10 +2826,16 @@ div.fancy-select ul.options li.hover {
     padding: 0 5px;
     font-size: 14px;
   }
+  .navbar li.navbar-item-title {
+    padding-top: 0 !important;
+  }
 }
 @media all and (max-width: 1100px) {
   .navbar li {
     font-size: 12px;
+  }
+  .navbar li.navbar-item-title {
+    padding-top: 1px !important;
   }
 }
 .navbar a {
@@ -2941,6 +2947,30 @@ div.fancy-select ul.options li.hover {
   .navbar .nav-mobiletitle {
     display: block;
   }
+}
+.navbar.navbar--public .nav-left {
+  padding-right: 60px;
+}
+.navbar.navbar--public .nav-right {
+  width: 60%;
+  text-align: left;
+}
+@media all and (max-width: 992px) {
+  .navbar.navbar--public .nav-right {
+    width: 50%;
+  }
+}
+.navbar.navbar--public .navbar-item-title {
+  padding-right: 80px;
+  padding-top: 1px;
+  font-family: "plutocondbold";
+  line-height: 59px;
+}
+.navbar.navbar--pro .navbar-item-title {
+  padding-right: 80px;
+  padding-top: 1px;
+  font-family: "plutocondbold";
+  line-height: 59px;
 }
 .prescribing-item {
   background-color: #008ac9;
@@ -3501,6 +3531,11 @@ div.fancy-select ul.options li.hover {
 .section-contact .section-contact-textarea {
   padding-bottom: 40px;
 }
+@media all and (max-width: 992px) {
+  .section-contact .section-contact-textarea {
+    padding-top: 40px;
+  }
+}
 .section-contact .section-contact-textarea > div {
   padding-bottom: 8px;
   color: #5d004a;
@@ -3511,48 +3546,10 @@ div.fancy-select ul.options li.hover {
   height: 150px;
   width: 450px;
 }
-.section-contact .section-contact-checkhuman label {
-  border-bottom: 0;
-}
-.section-contact .section-contact-checkhuman input[type="checkbox"]:not(:checked),
-.section-contact .section-contact-checkhuman input[type="checkbox"]:checked {
-  left: -9999px;
-  position: absolute;
-}
-.section-contact .section-contact-checkhuman [type="checkbox"]:not(:checked) + label,
-.section-contact .section-contact-checkhuman [type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 25px;
-  cursor: pointer;
-}
-.section-contact .section-contact-checkhuman [type="checkbox"]:not(:checked) + label:before,
-.section-contact .section-contact-checkhuman [type="checkbox"]:checked + label:before {
-  background: #fff;
-  border: 3px solid #5d004a;
-  content: '';
-  height: 20px;
-  left: 0;
-  position: absolute;
-  top: 2px;
-  width: 20px;
-}
-.section-contact .section-contact-checkhuman [type="checkbox"]:not(:checked) + label:after,
-.section-contact .section-contact-checkhuman [type="checkbox"]:checked + label:after {
-  content: '';
-  height: 20px;
-  left: 0px;
-  position: absolute;
-  top: 2px;
-  width: 20px;
-  color: #09ad7e;
-  font-size: 14px;
-}
-.section-contact .section-contact-checkhuman [type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-}
-.section-contact .section-contact-checkhuman [type="checkbox"]:checked + label:after {
-  background-color: #5d004a;
-  opacity: 1;
+@media all and (max-width: 992px) {
+  .section-contact .section-contact-textarea textarea {
+    width: 100%;
+  }
 }
 .section-contact label {
   border-bottom: 3px solid #5d004a;
@@ -3567,13 +3564,16 @@ div.fancy-select ul.options li.hover {
   display: inline-block;
   width: 100px;
 }
-.section-contact input {
+.section-contact input[type="text"] {
   border: 0;
   outline: 0;
 }
 .section-contact .section-contact-button {
   padding-top: 60px;
   text-align: center;
+}
+.section-contact .section-contact-button input {
+  border-size: 3px;
 }
 .section-contact-map .section-contact-map-left {
   background-color: #fff;
@@ -3618,6 +3618,12 @@ div.fancy-select ul.options li.hover {
   .section-contact-map .section-contact-map-right {
     display: block;
     width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  .section-contact-map .section-contact-map-right {
+    height: auto;
+    padding: 30px 30px;
   }
 }
 .section-contact-map .section-contact-map-title {
