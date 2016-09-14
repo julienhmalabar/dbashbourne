@@ -41,6 +41,14 @@
 		&:hover { background-color: transparent; color: @blue; }
 	}
 
+	&-bluelite {
+		background-color: #fff;
+		border: 3px solid @blue;
+		color: @blue;
+
+		&:hover { color: @blue; }
+	}
+
 	&-purple {
 		background-color: @purple;
 		border: 3px solid @purple;
@@ -78,6 +86,11 @@
 	color: @blue;
 	text-align: center;
 	text-decoration: none;
+
+	button {
+		background: none;
+		border: 0;
+	}
 
 	@media all and (max-width: @screen-md) {
 		padding: 35px 30px;

@@ -17,7 +17,7 @@ $(document).ready(function() {
 	//
 	// Auto open collapse when ID is load in URL
 		var anchor = window.location.hash.replace("#", "");
-	    $(".collapse").collapse('hide');
+	    $(".filter-selector .collapse").collapse('hide');
 	    $("#" + anchor).collapse('show');
 	//
 
