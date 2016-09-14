@@ -2789,22 +2789,22 @@ div.fancy-select ul.options li.hover {
   line-height: 32px;
   text-align: center;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1200px) {
   .filter-selector label {
     margin: 10px auto;
-    width: 45%;
+    width: 25%;
   }
 }
 @media all and (max-width: 992px) {
   .filter-selector label {
     margin: 10px auto;
-    width: 30%;
+    width: 33%;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 768px) {
   .filter-selector label {
     margin: 10px auto;
-    width: 25%;
+    width: 48%;
   }
 }
 .filter-selector label:hover {
