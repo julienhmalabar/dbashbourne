@@ -2845,7 +2845,7 @@ div.fancy-select ul.options li.hover {
   position: relative;
 }
 .footer-listTitle .footer-listTitle-arrows {
-  padding-left: 100px;
+  padding-left: 50px;
   color: #bec0c2;
   font-size: 11px;
   text-decoration: none;
@@ -3527,7 +3527,7 @@ div.fancy-select ul.options li.hover {
   height: 590px;
   position: relative;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   .topbanner-home {
     height: auto;
   }
@@ -3633,7 +3633,7 @@ div.fancy-select ul.options li.hover {
   width: 50%;
   vertical-align: top;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 650px) {
   .topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col {
     display: block;
     width: 100%;
@@ -3652,6 +3652,12 @@ div.fancy-select ul.options li.hover {
     padding: 150px 0 45px 0;
     font-size: 28px;
     line-height: 32px;
+  }
+}
+@media all and (max-width: 768px) {
+  .topbanner-home .topbanner-responsive-block .topbanner-responsive-block-col .topbanner-responsive-block-cta .topbanner-home-block-title {
+    padding-top: 100px;
+    font-size: 22px;
   }
 }
 @media all and (max-width: 480px) {

@@ -32,7 +32,7 @@
 	height: 590px;
 	position: relative;
 
-	@media all and (max-width: @screen-sm) {
+	@media all and (max-width: @screen-md) {
 		height: auto;
 	}
 
@@ -98,7 +98,7 @@
 
 			vertical-align: top;
 
-			@media all and (max-width: @screen-sm) {
+			@media all and (max-width: 650px) {
 				display: block;
 				width: 100%;
 			}
@@ -118,6 +118,14 @@
 
 			    		font-size: 28px;
 						line-height: 32px;
+			    	}
+			    }
+
+			    @media all and (max-width: @screen-sm) {
+			    	.topbanner-home-block-title {
+			    	    padding-top: 100px;
+
+			    	    font-size: 22px;
 			    	}
 			    }
 
