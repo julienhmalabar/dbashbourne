@@ -2320,6 +2320,14 @@ div.fancy-select ul.options li.hover {
   background-color: transparent;
   color: #5d004a;
 }
+.btn-purplelite {
+  background-color: #fff;
+  border: 3px solid #5d004a;
+  color: #5d004a;
+}
+.btn-purplelite:hover {
+  color: #5d004a;
+}
 .btn-large {
   padding: 8px 90px;
 }
@@ -3762,6 +3770,138 @@ div.fancy-select ul.options li.hover {
 .section-adverseevent a {
   text-decoration: underline;
 }
+.section-category-c {
+  background-color: #008ac9;
+}
+.section-category-c .category-c-title {
+  padding-bottom: 50px;
+  color: #fff;
+  font-family: "plutocondbold";
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-category-c .category-c-schema {
+  position: relative;
+  height: 340px;
+  margin: auto;
+  width: 920px;
+  color: #fff;
+}
+@media all and (max-width: 992px) {
+  .section-category-c .category-c-schema {
+    height: auto;
+    width: auto;
+  }
+}
+.section-category-c .category-c-schema-bigItem {
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 240px;
+  color: #008ac9;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-category-c .category-c-schema-productName {
+  position: absolute;
+  top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media all and (max-width: 992px) {
+  .section-category-c .category-c-schema-productName {
+    position: static;
+  }
+}
+.section-category-c .category-c-schema-productName--left {
+  left: 0;
+}
+@media all and (max-width: 992px) {
+  .section-category-c .category-c-schema-productName--left {
+    padding-top: 40px;
+  }
+}
+.section-category-c .category-c-schema-productName--right {
+  right: 0;
+  text-align: right;
+}
+@media all and (max-width: 992px) {
+  .section-category-c .category-c-schema-productName--right {
+    padding-top: 40px;
+    text-align: left;
+  }
+}
+.section-category-c .category-c-schema-productItem {
+  position: absolute;
+  width: 400px;
+}
+@media all and (max-width: 992px) {
+  .section-category-c .category-c-schema-productItem {
+    position: static;
+    width: auto;
+    max-width: 280px;
+  }
+}
+.section-category-c .category-c-schema-productItem--top {
+  top: 80px;
+}
+.section-category-c .category-c-schema-productItem--bottom {
+  top: 80px;
+  width: 430px;
+}
+.section-category-c .category-c-schema-productItem--bottom .category-c-schema-productLine1 {
+  padding-top: 150px !important;
+}
+@media screen and (max-width: 992px) {
+  .section-category-c .category-c-schema-productItem--bottom .category-c-schema-productLine1 {
+    padding-top: 30px !important;
+  }
+}
+.section-category-c .category-c-schema-productItem--right {
+  right: 0;
+  text-align: right;
+}
+@media all and (max-width: 992px) {
+  .section-category-c .category-c-schema-productItem--right {
+    right: auto;
+    text-align: left;
+  }
+}
+.section-category-c .category-c-schema-productItem .category-c-schema-productLine1 {
+  border-bottom: 3px solid #fff;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 42px;
+}
+@media screen and (max-width: 992px) {
+  .section-category-c .category-c-schema-productItem .category-c-schema-productLine1 {
+    padding-top: 10px;
+  }
+}
+.section-category-c .category-c-schema-productItem .b-left {
+  border-left: 3px solid #fff;
+}
+@media screen and (max-width: 992px) {
+  .section-category-c .category-c-schema-productItem .b-left {
+    border-left: 0;
+  }
+}
+.section-category-c .category-c-schema-productItem .b-right {
+  border-right: 3px solid #fff;
+}
+@media screen and (max-width: 992px) {
+  .section-category-c .category-c-schema-productItem .b-right {
+    border-right: 0;
+  }
+}
+.section-category-c .category-c-schema-productItem .category-c-schema-productLine2 {
+  font-size: 13px;
+  line-height: 28px;
+}
 .section-contact .section-contact-title {
   padding-bottom: 25px;
   color: #5d004a;
@@ -4014,11 +4154,11 @@ div.fancy-select ul.options li.hover {
     font-size: 13px;
   }
 }
-.section-homeWorld .btn {
+.section-homeWorld .btnWorld {
   background-color: #fff;
   color: #5d004a;
 }
-.section-homeWorld .btn:hover {
+.section-homeWorld .btnWorld:hover {
   background-color: transparent;
   color: #fff;
 }
@@ -4033,6 +4173,14 @@ div.fancy-select ul.options li.hover {
 }
 .section-searchmore-subtitle {
   padding-bottom: 30px;
+  font-size: 16px;
+}
+.worldwide-modal .modal-content {
+  border: 10px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 20px 50px;
+  color: #5d004a;
   font-size: 16px;
 }
 .section404 {
