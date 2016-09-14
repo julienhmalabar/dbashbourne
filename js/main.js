@@ -1,5 +1,66 @@
 $(document).ready(function() {
 
+	//
+	// EMAIL FORM VALIDATION
+
+		$(".js-sendMail").on('click', function(e) {
+
+			e.preventDefault(); // To not refresh page
+		
+			var valid;	
+			valid = validateContact();
+
+			if(valid) {
+				$.ajax({
+					url: "email.php",
+					data:'name='+$("#name").val()+'&email='+$("#email").val()+'&phone='+$("#phone").val()+'&select='+$("#select").val()+'&message='+$("#message").val(),
+					type: "POST",
+					success:function(results){
+						$(".section-contact-content").css("display","none");
+						$("#section-contact-message").css("display","block");
+					},
+					error:function (){}
+				});
+			}
+			else {
+				$(".section-contact-content").css("background-color","blue");
+			}
+
+		});
+
+		function validateContact() {
+			var valid = true;	
+			
+			if(!$("#name").val()) {
+				valid = false;
+			}
+			if(!$("#email").val()) {
+				valid = false;
+			}
+			if(!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+				valid = false;
+			}
+			if(!$("#phone").val()) {
+				valid = false;
+			}
+			if(!$("#select").val()) {
+				valid = false;
+			}
+			if(!$("#message").val()) {
+				valid = false;
+			}
+			
+			return valid;
+		}
+		
+
+	//
+
+
+
+
+
+
 	// Select Box
 	$('.js-fancySelect').fancySelect();
 	

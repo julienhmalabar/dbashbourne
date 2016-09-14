@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1" name=viewport>
-  <title>Ethypharm UK - Product</title>
+  <title>Ethypharm UK - Contact</title>
   <link rel="stylesheet" href="main.css">
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 <body>
 
@@ -82,56 +82,67 @@
 		<div class="container">
 			<div class="row">
 				
-				<form>
+				<form action="">
 
 					<div class="col-xs-12">
 						<div class="section-contact-title">WE WANT TO HEAR FROM YOU</div>
 						<div class="section-contact-subtitle">Contact us.</div>
 					</div>
 
-					<div class="col-xs-12 col-sm-6">
-						<label>
-							<span>Name:</span>
-							<input type="text">
-						</label>
+					<div class="section-contact-content">
 
-						<label>
-							<span>Email:</span>
-							<input type="text">
-						</label>
+						<div class="col-xs-12 col-sm-6">
+							<label>
+								<span>Name:</span>
+								<input type="text" id="name" name="name" required>
+							</label>
 
-						<label>
-							<span>Phone:</span>
-							<input type="text">
-						</label>
-						<div class="section-contact-select">
-							<select class="js-fancySelect">
-								<option>You are:</option>
-								<option>man</option>
-								<option>woman</option>
-							</select>
-						</div>
-					</div>
+							<label>
+								<span>Email:</span>
+								<input type="email" id="email" name="email" required>
+							</label>
 
-					<div class="col-xs-12 col-sm-6">
-						<div class="section-contact-textarea">
-							<div>Enquiry:</div>
-							<textarea></textarea>
+							<label>
+								<span>Phone:</span>
+								<input type="tel" id="phone" name="phone" required>
+							</label>
+							<div class="section-contact-select">
+								<select class="js-fancySelect" id="select" name="select" required>
+									<option value="">You are:</option>
+									<option value="Healthcare professional">Healthcare professional</option>
+									<option value="Member of the public">Member of the public</option>
+								</select>
+							</div>
 						</div>
-						<div class="section-contact-checkhuman">
-							<!-- <input type="checkbox" id="humancheckbox">
-							<label for="humancheckbox">Check this box to prove you’re a human !</label> -->
-							<div class="g-recaptcha" data-sitekey="6LfJDyoTAAAAAJs-T3-EyEXzXvShblcutuMfIg9v"></div>
-						</div>
-					</div>
 
-					<div class="col-xs-12">
-						<div class="section-contact-button">
-							<input type="submit" class="btn btn-purple btn-large" value="Send">
+						<div class="col-xs-12 col-sm-6">
+							<div class="section-contact-textarea">
+								<div>Enquiry:</div>
+								<textarea id="message" name="message" required></textarea>
+							</div>
+							<div class="section-contact-checkhuman">
+								<div class="g-recaptcha" data-sitekey="6LfJDyoTAAAAAJs-T3-EyEXzXvShblcutuMfIg9v"></div>
+							</div>
 						</div>
+
+						<div class="col-xs-12">
+							<div class="section-contact-button">
+								<button name="submit" class="btn btn-purple btn-large js-sendMail">Send</button>
+							</div>
+						</div>
+
 					</div>
 
 				</form>
+
+					<div id="section-contact-message">
+
+						<div class="col-xs-12">
+							<div class="section-contact-subtitle">Your message has been sent. Thanks !</div>
+						</div>
+					</div>
+
+				
 
 
 			</div>

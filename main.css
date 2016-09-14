@@ -4027,6 +4027,8 @@ div.fancy-select ul.options li.hover {
   display: inline-block;
   width: 100px;
 }
+.section-contact input[type="email"],
+.section-contact input[type="tel"],
 .section-contact input[type="text"] {
   border: 0;
   outline: 0;
@@ -4093,6 +4095,9 @@ div.fancy-select ul.options li.hover {
   padding-bottom: 20px;
   font-size: 28px;
   text-transform: uppercase;
+}
+#section-contact-message {
+  display: none;
 }
 .section-bioequivalence img {
   padding-bottom: 20px;
