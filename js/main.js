@@ -66,14 +66,14 @@ $(document).ready(function() {
 
 	var testSelect = $('.js-fancySelect');
 	
-	testSelect.on('change.fs blur.fs blur change', function() {
-    	// $(this).trigger('change.$');
+	testSelect.fancySelect().on('change.fs blur.fs blur change', function() {
+    	$(this).trigger('change.$');
 	    $(this).trigger('blur.$');
 	});
 	
 
 	var select = $('.js-fancySelectUrl');
-	select.on('blur.fs blur change change.fs' , function() {
+	select.fancySelect().on('blur.fs blur change change.fs' , function() {
 	    var url = $(this).val();
           if (url) {
               window.location = url;
