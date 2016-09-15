@@ -43,7 +43,7 @@
 .cscTable-tools {
 	display: none;
 
-	@media all and (max-width: @screen-xs-max) {
+	@media all and (max-width: @screen-sm) {
 		display: block;
 
 		color: #fff;
@@ -90,6 +90,12 @@
 
 		&:first-child {
 			border: 0;
+		}
+	}
+
+	.cscTable-column--hidden-768 {
+		@media all and (max-width: 768px) {
+			display: none;
 		}
 	}
 

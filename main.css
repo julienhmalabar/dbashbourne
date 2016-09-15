@@ -2688,7 +2688,7 @@ div.fancy-select ul.options li.hover {
 .cscTable-tools {
   display: none;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .cscTable-tools {
     display: block;
     color: #fff;
@@ -2730,6 +2730,11 @@ div.fancy-select ul.options li.hover {
 }
 .cscTable-table .cscTable-column:first-child {
   border: 0;
+}
+@media all and (max-width: 768px) {
+  .cscTable-table .cscTable-column--hidden-768 {
+    display: none;
+  }
 }
 .cscTable-table.cscTable-table--6cols .cscTable-column {
   width: 16.6666%;
@@ -3256,7 +3261,7 @@ div.fancy-select ul.options li.hover {
 .productTable-tools {
   display: none;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .productTable-tools {
     display: block;
     color: #bec0c2;
