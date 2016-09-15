@@ -3,7 +3,7 @@ $(document).ready(function() {
 	//
 	// EMAIL FORM VALIDATION
 
-		$(".js-sendMail").on('click', function(e) {
+		$(".js-sendMail").on( 'click', function(e) {
 
 			e.preventDefault(); // To not refresh page
 		
@@ -32,23 +32,36 @@ $(document).ready(function() {
 			var valid = true;	
 			
 			if(!$("#name").val()) {
+				$(".section-contact-error .error-global").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
 			}
 			if(!$("#email").val()) {
+				$(".section-contact-error .error-global").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
 			}
 			if(!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+				$(".section-contact-error .error-email").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
 			}
 			if(!$("#phone").val()) {
+				$(".section-contact-error .error-global").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
 			}
 			if(!$("#select").val()) {
+				$(".section-contact-error .error-global").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
 			}
 			if(!$("#message").val()) {
+				$(".section-contact-error .error-global").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
 			}
+
+			var captchResponse = $('#g-recaptcha-response').val();
+			if(captchResponse.length == 0 ) {
+				$(".section-contact-error .error-recaptcha").css('display','block').delay(4000).fadeOut("slow");
+				valid = false;
+			}
+			    
 			
 			return valid;
 		}

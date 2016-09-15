@@ -4040,8 +4040,23 @@ div.fancy-select ul.options li.hover {
   border: 0;
   outline: 0;
 }
+.section-contact .section-contact-error {
+  padding: 20px 0;
+  color: #5d004a;
+  font-size: 16px;
+  text-align: center;
+}
+.section-contact .section-contact-error .error-global {
+  display: none;
+}
+.section-contact .section-contact-error .error-email {
+  display: none;
+}
+.section-contact .section-contact-error .error-recaptcha {
+  display: none;
+}
 .section-contact .section-contact-button {
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
 }
 .section-contact .section-contact-button input {
