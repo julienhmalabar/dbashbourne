@@ -185,8 +185,6 @@ $(document).ready(function() {
 			}
 
 		});
-
-	//$(".js-sticky").sticky({topSpacing:0});
 	//
 
 
