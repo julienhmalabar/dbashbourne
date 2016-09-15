@@ -65,7 +65,7 @@ $(document).ready(function() {
 	$('.js-fancySelect').fancySelect();
 	
 	var select = $('.js-fancySelectUrl');
-	select.fancySelect().on('change.fs blur.fs' , function() {
+	select.fancySelect().on('blur.fs' , function() {
 	    var url = $(this).val();
           if (url) {
               window.location = url;
