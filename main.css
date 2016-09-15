@@ -3702,7 +3702,14 @@ div.fancy-select ul.options li.hover {
   background-color: #5d004a;
   height: 32px;
   line-height: 32px;
+  padding-right: 40px;
   width: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.topbar a {
   color: #fff;
 }
 .exit-modal .modal-dialog {
