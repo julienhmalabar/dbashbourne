@@ -2947,7 +2947,7 @@ div.fancy-select ul.options li.hover {
     position: absolute;
     top: 108px;
     width: 100%;
-    z-index: 1;
+    z-index: 9;
   }
 }
 .navbar {
@@ -3206,6 +3206,10 @@ div.fancy-select ul.options li.hover {
   background: #008ac9;
   color: #fff;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+}
 .productOverview-head {
   padding-bottom: 50px;
 }
@@ -3408,6 +3412,9 @@ div.fancy-select ul.options li.hover {
 .sidebar .sidebar-faq .knowmore a:hover {
   color: #fff;
   text-decoration: none;
+}
+#slider .carousel-indicators {
+  z-index: 3;
 }
 #slider .carousel-indicators li {
   background: transparent;

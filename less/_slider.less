@@ -1,29 +1,33 @@
 #slider {
 
-	.carousel-indicators li {
-		background: transparent;
-	    height: 16px;
-	    width: 16px;
+		.carousel-indicators {
+			z-index: 3;
 
-	    border: 1px solid #fff;
+			li {
+				background: transparent;
+			    height: 16px;
+			    width: 16px;
 
-		span {
-		    background-color: transparent;
-		    border-radius: 50px;
-		    display: block;
-		    height: 12px;
-		    margin: 1px;
-		    width: 12px;
+			    border: 1px solid #fff;
+
+				span {
+				    background-color: transparent;
+				    border-radius: 50px;
+				    display: block;
+				    height: 12px;
+				    margin: 1px;
+				    width: 12px;
+				}
+
+				&.active {
+			    	margin: 1px;
+
+			    	span {
+			    		background-color: #fff;
+			    	}
+			    }
+			}
 		}
-
-		&.active {
-	    	margin: 1px;
-
-	    	span {
-	    		background-color: #fff;
-	    	}
-	    }
-	}
 
 	.carousel-inner {
 		height: 400px;
