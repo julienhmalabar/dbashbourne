@@ -218,8 +218,15 @@ jQuery(window).resize(function() {
 	//
 	// Responsive NAV
 	if ( $(window).width() < 992 ) {
-            //$(".navbar-wrapper").css("display","none");
-        $(".navbar-wrapper").css("display","none");
+        //$(".navbar-wrapper").css("display","none");
+
+        if ($(".logobar").hasClass("nav-opened")) {
+        	$(".nav-icon i").toggleClass("hidden");
+        }
+    	
+    	$(".navbar-wrapper").css("display","none");
+    	$(".logobar").removeClass("nav-opened");
+    
     }
     else {
     	$(".navbar-wrapper").css("display","block");
