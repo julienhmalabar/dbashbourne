@@ -3210,9 +3210,6 @@ div.fancy-select ul.options li.hover {
   position: fixed;
   top: 0;
 }
-.sticky-mobile {
-  position: sticky;
-}
 .productOverview-head {
   padding-bottom: 50px;
 }
