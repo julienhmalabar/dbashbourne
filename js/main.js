@@ -60,28 +60,12 @@ $(document).ready(function() {
 
 
 
-
+	//
 	// Select Box
-	// $('.js-fancySelect').fancySelect();
-
-	var testSelect = $('.js-fancySelect');
-	
 	$('.js-fancySelect').fancySelect( function() {
-
 		$(this).on('change.fs blur.fs blur change', function() {
-
-			console.log("testSelect : " + testSelect);
-	    	//alert("hello1");
-
-	    	//$(this).trigger('change.$');
-		    //$(this).trigger('blur.$');
-
-		    //alert("hello2");
-
 		    $(this).removeClass("open");
-
 		});
-
 	});
 
 	var select = $('.js-fancySelectUrl');

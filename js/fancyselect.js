@@ -18,12 +18,8 @@
       triggerTemplate: function(optionEl) {
         return optionEl.text();
       }
-    }, opts);
-    
-    //isiOS = !!navigator.userAgent.match(/iP(hone|od|ad)/i);
-    
+    }, opts);    
     isiOS = !!navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
-
     return this.each(function() {
       var copyOptionsToList, disabled, options, sel, trigger, updateTriggerText, wrapper;
       sel = $(this);
@@ -62,10 +58,7 @@
       };
       sel.on('blur.fs', function() {
         if (trigger.hasClass('open')) {
-
-          // Brice
           trigger.removeClass("open");
-
           return setTimeout(function() {
             return trigger.trigger('close.fs');
           }, 120);
