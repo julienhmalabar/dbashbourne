@@ -10,7 +10,7 @@
       opts = {};
     }
     settings = $.extend({
-      forceiOS: true,
+      forceiOS: false,
       includeBlank: false,
       optionTemplate: function(optionEl) {
         return optionEl.text();
@@ -62,6 +62,10 @@
       };
       sel.on('blur.fs', function() {
         if (trigger.hasClass('open')) {
+
+          // Brice
+          trigger.removeClass("open");
+
           return setTimeout(function() {
             return trigger.trigger('close.fs');
           }, 120);

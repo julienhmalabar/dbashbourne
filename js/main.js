@@ -67,10 +67,15 @@ $(document).ready(function() {
 	var testSelect = $('.js-fancySelect');
 	
 	testSelect.fancySelect().on('change.fs blur.fs blur change', function() {
+    	//alert("hello1");
+
     	$(this).trigger('change.$');
 	    $(this).trigger('blur.$');
+
+	    alert("hello2");
+
+	    $(".fancy-select .options").removeClass("open");
 	});
-	
 
 	var select = $('.js-fancySelectUrl');
 	select.fancySelect().on('blur.fs blur change change.fs' , function() {
