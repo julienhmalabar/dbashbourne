@@ -177,8 +177,9 @@ $(document).ready(function() {
 			if (window.pageYOffset >= menuPosition.top && !isAdded) {
 				menu.classList.add('sticky');
 				menu.parentNode.insertBefore(placeholder, menu);
-				isAdded = true;
-			} else if (window.pageYOffset < menuPosition.top && isAdded) {
+				isAdded = true;	
+			} 
+			else if (window.pageYOffset < menuPosition.top && isAdded) {
 				menu.classList.remove('sticky');
 				menu.parentNode.removeChild(placeholder);
 				isAdded = false;
