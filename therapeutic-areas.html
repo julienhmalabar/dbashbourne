@@ -19,7 +19,7 @@
 				<div class="row">
 					<div class="logobar">
 						<div class="nav-icon js-nav hidden-lg hidden-md"><i class="i-nav-icon"></i><i class="i-close hidden"></i></div>
-						<div class="logobar-logo"></div>
+						<div class="logobar-logo"><a href="homepage.html"><span></span></a></div>
 					</div>
 				</div>
 
@@ -200,7 +200,22 @@
 					<div class="section-adverseevent-title">Report adverse events</div>
 				</div>
 				<div class="col-xs-12 col-md-4">
-					<p>Reporting forms and information can be found at:<br><a href="http://www.mhra.gov.uk/yellowcard">www.mhra.gov.uk/yellowcard</a></p>
+					<p>Reporting forms and information can be found at:<br><span class="go-modal" data-toggle="modal" data-target=".worldwide-modal">www.mhra.gov.uk/yellowcard</span></p>
+					
+					<!-- <button type="button" class="btn btn-large btnWorld" data-toggle="modal" data-target=".worldwide-modal">Learn more</button> -->
+					<div class="modal fade worldwide-modal" tabindex="-1" role="dialog" aria-labelledby="worldwide-modal">
+						<div class="modal-dialog modal-md" role="document">
+							<div class="modal-content">
+								<p>You are now leaving Ethypharm UK and will be redirected to Ethypharm Global website</p>
+								
+								<div>
+									<button type="button" class="btn btn-purplelite" data-dismiss="modal" aria-label="Close">Cancel</button>
+									<a href="http://www.mhra.gov.uk/yellowcard" class="btn btn-purple">OK</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<p>Adverse events should be reported to Ethypharm UK Ltd</p>
 					<ul>
 						<li><span class="bold">Telephone</span><br>0870 192 3283</li>
@@ -212,7 +227,7 @@
 					<p>Any personal data you share with us will remain condidential at all times.</p>
 					<p>Medical enquiries can be directed to the medical information department using the form below:</p>
 					<ul>
-						<li><span class="bold">Download</span><br><a href="#">Medical Enquiry Form</a></li>
+						<li><span class="bold">Download</span><br><a href="docs/Medical_Information_Enquiry_Form_v7_16th_February_2015.docx">Medical Enquiry Form</a></li>
 					</ul>
 				</div>
 			</div>
@@ -234,19 +249,19 @@
 
 
 						<div class="col-xs-12 col-md-3">
-							<div class="footer-listTitle"><i class="i-puce"></i> Healthcare professionals</div>
+							<div class="footer-listTitle"><a href="homepage-pro.html"><i class="i-puce"></i> Healthcare professionals</a></div>
 							<ul class="footer-list">
-								<li>Prescribing informations</li>
-								<li>Products</li>
-								<li>Cost savings calculator</li>
+								<li><a href="prescribing-infos.html">Prescribing informations</a></li>
+								<li><a href="product.html">Products</a></li>
+								<li><a href="cost-saving-calculator.html">Cost savings calculator</a></li>
 							</ul>
 						</div>
 
 						<div class="col-xs-12 col-md-3">
-							<div class="footer-listTitle"><i class="i-puce"></i> Patients & members of the public</div>
+							<div class="footer-listTitle"><a href="homepage-public.html"><i class="i-puce"></i> Patients & members of the public</a></div>
 							<ul class="footer-list">
-								<li>Therapeutic Areas</li>
-								<li>Frequently Asked Questions</li>
+								<li><a href="therapeutic-areas.html">Therapeutic Areas</a></li>
+								<li><a href="faq.html">Frequently Asked Questions</a></li>
 							</ul>
 						</div>
 
@@ -263,27 +278,16 @@
 
 								<div class="row">
 									<ul class="col-xs-12 col-sm-3 footer-list">
-										<li>Fencino</li>
-										<li>Venlalic</li>
-										<li>Fencino</li>
-										<li>Venlalic</li>
+										<li><a href="product-fencino.html">Fencino</a></li>
 									</ul>
 									<ul class="col-xs-12 col-sm-3 footer-list">
-										<li>Fencino</li>
-										<li>Venlalic</li>
-										<li>Fencino</li>
-										<li>Venlalic</li>
+										<li><a href="product.html">Venlalic</a></li>
 									</ul>
 									<ul class="col-xs-12 col-sm-3 footer-list">
-										<li>Fencino</li>
-										<li>Venlalic</li>
-										<li>Fencino</li>
-										<li>Venlalic</li>
+										<li><a href="product-abtard.html">Abtard</a></li>
 									</ul>
 									<ul class="col-xs-12 col-sm-3 footer-list">
-										<li>Fencino</li>
-										<li>Venlalic</li>
-										<li>Fencino</li>
+										<li><a href="product-ebesque.html">Ebesque</a></li>
 									</ul>
 								</div>
 
@@ -292,7 +296,7 @@
 						</div>
 
 						<div class="col-xs-12 col-md-2">
-							<div class="footer-listTitle"><i class="i-puce"></i> Contact</div>
+							<div class="footer-listTitle"><a href="contact.html"><i class="i-puce"></i> Contact</a></div>
 						</div>
 
 					</div>

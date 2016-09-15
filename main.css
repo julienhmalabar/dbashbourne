@@ -2921,9 +2921,10 @@ div.fancy-select ul.options li.hover {
     font-size: 25px;
   }
 }
-.logobar-logo {
+.logobar-logo span {
   background: url(../img/logo.png) no-repeat;
   background-size: contain;
+  display: block;
   height: 48px;
   margin-top: 8px;
   width: 180px;
@@ -4257,6 +4258,9 @@ div.fancy-select ul.options li.hover {
   padding-bottom: 30px;
   font-size: 16px;
 }
+.worldwide-modal {
+  text-align: center;
+}
 .worldwide-modal .modal-dialog {
   left: 0;
   margin-top: -120px;
@@ -4280,6 +4284,13 @@ div.fancy-select ul.options li.hover {
   padding: 20px 50px;
   color: #5d004a;
   font-size: 16px;
+}
+.go-modal {
+  text-decoration: underline;
+}
+.go-modal:hover {
+  cursor: pointer;
+  color: #23527c;
 }
 .section404 {
   padding-bottom: 80px;
