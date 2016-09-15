@@ -66,15 +66,22 @@ $(document).ready(function() {
 
 	var testSelect = $('.js-fancySelect');
 	
-	testSelect.fancySelect().on('change.fs blur.fs blur change', function() {
-    	//alert("hello1");
+	$('.js-fancySelect').fancySelect( function() {
 
-    	$(this).trigger('change.$');
-	    $(this).trigger('blur.$');
+		$(this).on('change.fs blur.fs blur change', function() {
 
-	    alert("hello2");
+			console.log("testSelect : " + testSelect);
+	    	//alert("hello1");
 
-	    $(".fancy-select .options").removeClass("open");
+	    	//$(this).trigger('change.$');
+		    //$(this).trigger('blur.$');
+
+		    //alert("hello2");
+
+		    $(this).removeClass("open");
+
+		});
+
 	});
 
 	var select = $('.js-fancySelectUrl');
