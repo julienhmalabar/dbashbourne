@@ -19,7 +19,11 @@
         return optionEl.text();
       }
     }, opts);
-    isiOS = !!navigator.userAgent.match(/iP(hone|od|ad)/i);
+    
+    //isiOS = !!navigator.userAgent.match(/iP(hone|od|ad)/i);
+    
+    isiOS = !!navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
+
     return this.each(function() {
       var copyOptionsToList, disabled, options, sel, trigger, updateTriggerText, wrapper;
       sel = $(this);
