@@ -62,15 +62,23 @@ $(document).ready(function() {
 
 
 	// Select Box
-	$('.js-fancySelect').fancySelect();
+	// $('.js-fancySelect').fancySelect();
+
+	var testSelect = $('.js-fancySelect');
 	
+	testSelect.fancySelect().on('change.fs blur.fs blur change', function() {
+    	$(this).trigger('change.$');
+	    $(this).trigger('blur.$');
+	});
+	
+
 	var select = $('.js-fancySelectUrl');
 	select.fancySelect().on('blur.fs blur change change.fs' , function() {
-	    var url = $(this).val();
-          if (url) {
-              window.location = url;
-          }
-          return false;
+	    // var url = $(this).val();
+     //      if (url) {
+     //          window.location = url;
+     //      }
+     //      return false;
 	});
 	//
 
