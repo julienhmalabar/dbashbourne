@@ -112,7 +112,7 @@ $(document).ready(function() {
 
 		// Au chargement de la page
 
-		if ($(window).width() < 768) {
+		if ($(window).width() < 769) {
 
 			// On donne la width du browser à chaque colonnedu tableau 
 			//$(".productTable-column").css("width", $(window).width());
@@ -185,7 +185,7 @@ $(document).ready(function() {
 		var menu = document.querySelector('.js-sticky');
 		var menuPosition = menu.getBoundingClientRect();
 		var placeholder = document.createElement('div');
-		placeholder.style.width = menuPosition.width + 'px';
+		placeholder.style.width = $(window).width + 'px';
 		placeholder.style.height = menuPosition.height + 'px';
 		var isAdded = false;
 
@@ -229,7 +229,7 @@ jQuery(window).resize(function() {
 
     //
     //
-    	if ( $(window).width() < 768 ) {
+    	if ( $(window).width() < 769 ) {
 
     		// On donne la width du browser à chaque colonne du tableau 
 			$(".js-table-column").css("width", $(window).width());
