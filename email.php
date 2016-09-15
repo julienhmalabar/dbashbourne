@@ -1,6 +1,6 @@
 <?php
 
-    $toEmail = "contact@bricearchenault.com";
+    $toEmail = "thomas.louet@malabardesign.fr";
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 
     if(mail($toEmail, "New message from Ethypharm UK Website", "\n\nEmail: " . $_POST["email"] . "\n\nPhone: " . $_POST["phone"] . "\n\nType: " . $_POST["select"] . "\n\nMessage: \n" . $_POST["message"], $mailHeaders)) {
