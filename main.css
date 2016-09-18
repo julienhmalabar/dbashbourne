@@ -2908,7 +2908,7 @@ div.fancy-select ul.options li.hover {
 }
 @media all and (max-width: 992px) {
   .logobar {
-    padding: 10px;
+    padding: 12px 10px;
     line-height: 70px;
   }
   .logobar img {
@@ -2932,7 +2932,7 @@ div.fancy-select ul.options li.hover {
 .logobar.nav-opened {
   background-color: #5d004a;
 }
-.logobar.nav-opened .logobar-logo {
+.logobar.nav-opened .logobar-logo span {
   background: url(../img/logo-white.png) no-repeat;
   background-size: contain;
   height: 48px;
@@ -2951,7 +2951,7 @@ div.fancy-select ul.options li.hover {
     left: 0;
     overflow: auto;
     position: absolute;
-    top: 108px;
+    top: 80px;
     width: 100%;
     z-index: 9;
   }
