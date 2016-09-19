@@ -185,7 +185,7 @@
         selOpts = sel.find('option');
         return sel.find('option').each(function(i, opt) {
           var optHtml;
-          opt = $(opt);
+          opt = $(opt); 
           if (!opt.prop('disabled') && (opt.val() || settings.includeBlank)) {
             optHtml = settings.optionTemplate(opt);
             if (opt.prop('selected')) {
