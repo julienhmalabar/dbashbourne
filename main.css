@@ -2550,9 +2550,9 @@ div.fancy-select ul.options li.hover {
 }
 .cost-calculator-pricing {
   display: inline-block;
-  width: 42%;
+  width: 43%;
   color: #008ac9;
-  font-size: 32px;
+  font-size: 23px;
   font-weight: bold;
   text-align: right;
   vertical-align: middle;
@@ -4377,3 +4377,5 @@ div.fancy-select ul.options li.hover {
 .m-left75 {
   margin-left: 75px;
 }
+
+/*# sourceMappingURL=main.css.map */
