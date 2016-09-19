@@ -3573,6 +3573,11 @@ div.fancy-select ul.options li.hover {
     font-size: 38px;
   }
 }
+@media all and (max-width: 768px) {
+  .topbanner--marginBottom {
+    margin-bottom: 15px;
+  }
+}
 .topbanner-home {
   height: 590px;
   position: relative;
