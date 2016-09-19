@@ -3065,6 +3065,31 @@ div.fancy-select ul.options li.hover {
   width: 1920px;
   z-index: -1;
 }
+@media all and (max-width: 1366px) {
+  .navbar .nav-right:before {
+    left: -23px;
+  }
+}
+@media all and (max-width: 1330px) {
+  .navbar .nav-right:before {
+    left: -6px;
+  }
+}
+@media all and (max-width: 1300px) {
+  .navbar .nav-right:before {
+    left: -30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .navbar .nav-right:before {
+    left: -22px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .navbar .nav-right:before {
+    left: -31px;
+  }
+}
 @media all and (max-width: 991px) {
   .navbar .nav-left,
   .navbar .nav-right {
@@ -3119,6 +3144,11 @@ div.fancy-select ul.options li.hover {
 }
 .navbar.navbar--public .nav-left {
   padding-right: 60px;
+}
+@media all and (max-width: 992px) {
+  .navbar.navbar--public .nav-left {
+    padding-right: 0;
+  }
 }
 .navbar.navbar--public .nav-right {
   width: 60%;
@@ -3548,11 +3578,16 @@ div.fancy-select ul.options li.hover {
     font-size: 38px;
   }
 }
+@media all and (max-width: 768px) {
+  .topbanner--marginBottom {
+    margin-bottom: 15px;
+  }
+}
 .topbanner-home {
   height: 590px;
   position: relative;
 }
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
   .topbanner-home {
     height: auto;
   }
