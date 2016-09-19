@@ -3145,6 +3145,11 @@ div.fancy-select ul.options li.hover {
 .navbar.navbar--public .nav-left {
   padding-right: 60px;
 }
+@media all and (max-width: 992px) {
+  .navbar.navbar--public .nav-left {
+    padding-right: 0;
+  }
+}
 .navbar.navbar--public .nav-right {
   width: 60%;
   text-align: left;
