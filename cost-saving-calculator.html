@@ -324,8 +324,8 @@
     
       <script type="text/javascript">
 	  
-	  var ccg_lines = {};
-	  var practice_lines = {};
+	  var ccg_lines = {}; // objet datas ccg
+	  var practice_lines = {}; // objet datas practice
 	  
 function readCCGFile(file)
 {
@@ -355,10 +355,11 @@ function readCCGFile(file)
             			}
 						data[0] = data[0].trim();
 						var val = data[data.length-1];
+						// generate select option values
 						$("#cost-calculator-ccg select").append('<option data-saving-ccg="'+val+'" value="'+data[0]+'">'+data[0]+'</option>');
 						ccg_lines[data[0]] = tarr;
 						
-						if(i==1){
+						if(i==1){ // initialize datas with first occurence
 				
 							$("#saving-ccg").html('£'+val);
 							var raw_value = data[0]; 
@@ -382,7 +383,7 @@ function readCCGFile(file)
     }
     rawFile.send(null);
 	
-	readPRACTICEFile("datas/practice.csv");
+	readPRACTICEFile("datas/practice.csv"); 
 }
 
 
@@ -436,7 +437,7 @@ function readPRACTICEFile(file)
 				$("#cost-calculator-practice ul").html("");
 				$("#cost-calculator-practice select").append('<option value="">Please choose a practice name</option>');
 				
-				//alert(JSON.stringify(practice_lines[k]));
+				
 				for(var z=0;z<practice_lines[k].length;z++){ 
 					$("#cost-calculator-practice select").append('<option value="'+z+'">'+practice_lines[k][z]["Practice Name"]+'</option>');
 					$("#cost-calculator-practice ul").append('<li data-raw-value="'+z+'">'+practice_lines[k][z]["Practice Name"]+'</li>');
@@ -453,11 +454,11 @@ function readPRACTICEFile(file)
     rawFile.send(null);
 }
 
-readCCGFile("datas/ccg.csv");
+	readCCGFile("datas/ccg.csv");
 
 
 
-	$(document).on("click","#cost-calculator-ccg li",function(){
+	$(document).on("click","#cost-calculator-ccg li",function(){ // chage ccg select
 		
 		var raw_value = $(this).data("raw-value");
 		var val =  ccg_lines[raw_value]["Grand Total"];
@@ -494,7 +495,7 @@ readCCGFile("datas/ccg.csv");
 	
 	
 	
-	$(document).on("click","#cost-calculator-practice li",function(){
+	$(document).on("click","#cost-calculator-practice li",function(){ // change practice select
 		
 		var ccg_value = $("#cost-calculator-ccg li.selected").data("raw-value"); 
 		var practice_value = $(this).data("raw-value"); 
