@@ -436,7 +436,7 @@ function readPRACTICEFile(file)
 				$("#cost-calculator-practice ul").html("");
 				$("#cost-calculator-practice select").append('<option value="">Please choose a practice name</option>');
 				
-				alert(JSON.stringify(practice_lines[k]));
+				//alert(JSON.stringify(practice_lines[k]));
 				for(var z=0;z<practice_lines[k].length;z++){ 
 					$("#cost-calculator-practice select").append('<option value="'+z+'">'+practice_lines[k][z]["Practice Name"]+'</option>');
 					$("#cost-calculator-practice ul").append('<li data-raw-value="'+z+'">'+practice_lines[k][z]["Practice Name"]+'</li>');
