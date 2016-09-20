@@ -2650,10 +2650,6 @@ div.fancy-select ul.options li.hover {
 .cost-calculator-table .cost-calculator-tableCell:first-child {
   border-left: 0;
 }
-span.update-data {
-  font-size: inherit;
-  text-transform: none;
-}
 .cscTable {
   display: block;
   float: left;
@@ -2759,7 +2755,7 @@ span.update-data {
 .cscTable-table .cscTable-cell:nth-child(even) {
   background-color: #008ac9;
 }
-.cscTable-table .cscTable-cell span {
+.cscTable-table .cscTable-cell span:not(.update-data) {
   font-size: 16px;
   text-transform: uppercase;
 }
