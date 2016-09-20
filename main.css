@@ -2510,8 +2510,6 @@ div.fancy-select ul.options li.hover {
 .collapsing-classic .collapsing-body {
   padding: 35px 20px;
 }
-@media all and (max-width: 768px) {
-}
 .collapsing-classic .collapsing-body .collapsing-notes {
   padding-bottom: 40px;
   color: #737373;
@@ -2968,11 +2966,6 @@ div.fancy-select ul.options li.hover {
     width: 100%;
   }
 }
-@media all and (max-width: 991px) {
-  .navbar {
-    width: 100%;
-  }
-}
 @media all and (max-width: 768px) {
   .navbar {
     width: 550px;
@@ -2990,7 +2983,7 @@ div.fancy-select ul.options li.hover {
   font-size: 15px;
   line-height: 60px;
 }
-@media all and (max-width: 1330px) {
+@media all and (max-width: 1380px) {
   .navbar li {
     padding: 0 5px;
     font-size: 14px;
@@ -2999,7 +2992,7 @@ div.fancy-select ul.options li.hover {
     padding-top: 0 !important;
   }
 }
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1150px) {
   .navbar li {
     font-size: 12px;
   }
@@ -3034,12 +3027,41 @@ div.fancy-select ul.options li.hover {
 .navbar .nav-right {
   background-color: #ef8214;
   display: inline-block;
-  padding-left: 40px;
+  padding-left: 74px;
   position: relative;
+  /*@media all and (max-width: 1366px) {
+	    	&:before { left: -23px; }
+		}
+
+		@media all and (max-width: 1330px) {
+	    	&:before { left: -6px; }
+		}
+
+		@media all and (max-width: 1300px) {
+	    	&:before { left: -30px; }
+		}
+
+		@media all and (max-width: @screen-lg) {
+	    	&:before { left: -22px; }
+		}
+
+		@media all and (max-width: 1100px) {
+	    	&:before { left: -31px; }
+		}*/
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1380px) {
   .navbar .nav-right {
-    padding-left: 12px;
+    padding-left: 47px;
+  }
+}
+@media all and (min-width: 1162px) and (max-width: 1212px) {
+  .navbar .nav-right {
+    padding-left: 45px;
+  }
+}
+@media all and (max-width: 1162px) {
+  .navbar .nav-right {
+    padding-left: 19px;
   }
 }
 .navbar .nav-right:before {
@@ -3051,7 +3073,7 @@ div.fancy-select ul.options li.hover {
   top: 0;
   width: 40px;
   background-color: blue;
-  border-left: 20px solid #008ac9;
+  border-left: 18px solid #008ac9;
   border-bottom: 71px solid #ef8214;
 }
 .navbar .nav-right:after {
@@ -3064,31 +3086,6 @@ div.fancy-select ul.options li.hover {
   top: 0;
   width: 1920px;
   z-index: -1;
-}
-@media all and (max-width: 1366px) {
-  .navbar .nav-right:before {
-    left: -23px;
-  }
-}
-@media all and (max-width: 1330px) {
-  .navbar .nav-right:before {
-    left: -6px;
-  }
-}
-@media all and (max-width: 1300px) {
-  .navbar .nav-right:before {
-    left: -30px;
-  }
-}
-@media all and (max-width: 1200px) {
-  .navbar .nav-right:before {
-    left: -22px;
-  }
-}
-@media all and (max-width: 1100px) {
-  .navbar .nav-right:before {
-    left: -31px;
-  }
 }
 @media all and (max-width: 991px) {
   .navbar .nav-left,
@@ -3594,87 +3591,35 @@ div.fancy-select ul.options li.hover {
 }
 .topbanner-home .topbanner-home-block {
   background: url(img/banner-home.jpg) no-repeat;
-  background-position: 43%;
+  background-position: center;
   height: 100%;
   position: relative;
   width: 100%;
   color: #fff;
   text-align: center;
-}
-@media all and (max-width: 1600px) {
-  .topbanner-home .topbanner-home-block {
-    background-position: 45%;
-  }
-}
-@media all and (max-width: 1400px) {
-  .topbanner-home .topbanner-home-block {
-    background-position: 46%;
-  }
-}
-@media all and (max-width: 1300px) {
-  .topbanner-home .topbanner-home-block {
-    background-position: 50%;
-  }
-}
-@media all and (max-width: 1200px) {
-  .topbanner-home .topbanner-home-block {
-    background-position: 47%;
-  }
-}
-@media all and (max-width: 1100px) {
-  .topbanner-home .topbanner-home-block {
-    background-position: 50%;
-  }
+  /*@media all and (max-width: 1600px) { background-position: 45%;}
+		@media all and (max-width: 1400px) { background-position: 46%; }
+		@media all and (max-width: 1300px) { background-position: 50%; }
+		@media all and (max-width: @screen-lg) { background-position: 47%; }
+		@media all and (max-width: 1100px) { background-position: 50%; }*/
 }
 .topbanner-home .topbanner-home-left {
   display: inline-block;
   position: absolute;
   left: 15%;
-}
-@media all and (max-width: 1400px) {
-  .topbanner-home .topbanner-home-left {
-    left: 12%;
-  }
-}
-@media all and (max-width: 1300px) {
-  .topbanner-home .topbanner-home-left {
-    left: 13%;
-  }
-}
-@media all and (max-width: 1200px) {
-  .topbanner-home .topbanner-home-left {
-    left: 12%;
-  }
-}
-@media all and (max-width: 1100px) {
-  .topbanner-home .topbanner-home-left {
-    left: 12%;
-  }
+  /*@media all and (max-width: 1400px) { left: 12%; }
+		@media all and (max-width: 1300px) { left: 13%; }
+		@media all and (max-width: @screen-lg) { left: 12%; }
+		@media all and (max-width: 1100px) { left: 12%; }*/
 }
 .topbanner-home .topbanner-home-right {
   display: inline-block;
   position: absolute;
   right: 15%;
-}
-@media all and (max-width: 1400px) {
-  .topbanner-home .topbanner-home-right {
-    right: 12%;
-  }
-}
-@media all and (max-width: 1300px) {
-  .topbanner-home .topbanner-home-right {
-    right: 13%;
-  }
-}
-@media all and (max-width: 1200px) {
-  .topbanner-home .topbanner-home-right {
-    right: 8%;
-  }
-}
-@media all and (max-width: 1100px) {
-  .topbanner-home .topbanner-home-right {
-    right: 7%;
-  }
+  /*@media all and (max-width: 1400px) { right: 12%; }
+		@media all and (max-width: 1300px) { right: 13%; }
+		@media all and (max-width: @screen-lg) { right: 8%; }
+		@media all and (max-width: 1100px) { right: 7%; }*/
 }
 .topbanner-home .topbanner-home-block-title {
   padding: 200px 0 45px 0;
