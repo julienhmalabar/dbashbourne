@@ -217,7 +217,7 @@ jQuery(window).resize(function() {
 
 	//
 	// Responsive NAV
-	if ( $(window).width() < 992 ) {
+	/*if ( $(window).width() < 992 ) {
         //$(".navbar-wrapper").css("display","none");
 
         if ($(".logobar").hasClass("nav-opened")) {
@@ -231,7 +231,7 @@ jQuery(window).resize(function() {
     else {
     	$(".navbar-wrapper").css("display","block");
     	$(".nav-opened").removeClass("nav-opened");
-    }
+    }*/
     //
 
     //

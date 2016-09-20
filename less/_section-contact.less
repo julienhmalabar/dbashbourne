@@ -107,6 +107,10 @@
 	input[type="email"], input[type="tel"], input[type="text"] {
 		border: 0;
 		outline: 0;
+		width:200px;
+		@media all and (min-width: @screen-md) {
+		    width:260px;
+		}
 	}
 
 	.section-contact-error {

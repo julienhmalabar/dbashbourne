@@ -2510,8 +2510,6 @@ div.fancy-select ul.options li.hover {
 .collapsing-classic .collapsing-body {
   padding: 35px 20px;
 }
-@media all and (max-width: 768px) {
-}
 .collapsing-classic .collapsing-body .collapsing-notes {
   padding-bottom: 40px;
   color: #737373;
@@ -4038,6 +4036,14 @@ div.fancy-select ul.options li.hover {
 .section-contact input[type="text"] {
   border: 0;
   outline: 0;
+  width: 200px;
+}
+@media all and (min-width: 992px) {
+  .section-contact input[type="email"],
+  .section-contact input[type="tel"],
+  .section-contact input[type="text"] {
+    width: 260px;
+  }
 }
 .section-contact .section-contact-error {
   padding: 20px 0;
