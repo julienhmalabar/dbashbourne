@@ -2510,6 +2510,8 @@ div.fancy-select ul.options li.hover {
 .collapsing-classic .collapsing-body {
   padding: 35px 20px;
 }
+@media all and (max-width: 768px) {
+}
 .collapsing-classic .collapsing-body .collapsing-notes {
   padding-bottom: 40px;
   color: #737373;
@@ -2648,7 +2650,7 @@ div.fancy-select ul.options li.hover {
 .cost-calculator-table .cost-calculator-tableCell:first-child {
   border-left: 0;
 }
-.cost-calculator-table .cost-calculator-tableCell span.update-data {
+span.update-data {
   font-size: inherit;
   text-transform: none;
 }
