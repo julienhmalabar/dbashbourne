@@ -987,7 +987,3 @@ FileETag None
 # | Protection sur serveur de dev                                      |
 # ----------------------------------------------------------------------
 
-AuthUserFile .htpswd
-AuthName "Accès protégé"
-AuthType Basic
-Require valid-user
