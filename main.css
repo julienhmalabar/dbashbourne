@@ -2705,7 +2705,7 @@ div.fancy-select ul.options li.hover {
   }
 }
 .cscTable-table {
-  border-bottom: 10px solid #33a1d4;
+  border-bottom: 5px solid #33a1d4;
   border-top: 10px solid #33a1d4;
   display: table;
   width: 100%;
@@ -2747,11 +2747,15 @@ div.fancy-select ul.options li.hover {
   font-size: 16px;
   text-transform: uppercase;
 }
-.cscTable-table .cscTable-cell:nth-child(odd) {
-  background-color: #33a1d4;
+@media all and (max-width: 768px) {
+  .cscTable-table .cscTable-cell:nth-child(odd) {
+    background-color: #33a1d4;
+  }
 }
-.cscTable-table .cscTable-cell:nth-child(even) {
-  background-color: #008ac9;
+@media all and (max-width: 768px) {
+  .cscTable-table .cscTable-cell:nth-child(even) {
+    background-color: #008ac9;
+  }
 }
 .cscTable-table .cscTable-cell span {
   font-size: 16px;
