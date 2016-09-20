@@ -2650,6 +2650,10 @@ div.fancy-select ul.options li.hover {
 .cost-calculator-table .cost-calculator-tableCell:first-child {
   border-left: 0;
 }
+.cost-calculator-table .cost-calculator-tableCell span.update-data {
+  font-size: inherit;
+  text-transform: none;
+}
 .cscTable {
   display: block;
   float: left;
