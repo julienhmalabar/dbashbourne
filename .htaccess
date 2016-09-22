@@ -527,6 +527,9 @@ DirectoryIndex index.html index.php
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
     RewriteCond %{SCRIPT_FILENAME} -f
     RewriteRule "(^|/)\." - [F]
+	
+	
+	Redirect permanent /product-html /product-abtard.html
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
