@@ -502,6 +502,8 @@ AddDefaultCharset utf-8
     Options -Indexes
 </IfModule>
 
+DirectoryIndex index.html index.php
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Block access to all hidden files and directories with the exception of
