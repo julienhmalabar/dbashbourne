@@ -529,7 +529,7 @@ DirectoryIndex index.html index.php
     RewriteRule "(^|/)\." - [F]
 	
 	
-	Redirect permanent /product-html /product-abtard.html
+	Redirect permanent /product.html /product-abtard.html
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
