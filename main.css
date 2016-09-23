@@ -2510,6 +2510,8 @@ div.fancy-select ul.options li.hover {
 .collapsing-classic .collapsing-body {
   padding: 35px 20px;
 }
+@media all and (max-width: 768px) {
+}
 .collapsing-classic .collapsing-body .collapsing-notes {
   padding-bottom: 40px;
   color: #737373;
@@ -2930,6 +2932,12 @@ div.fancy-select ul.options li.hover {
   height: 48px;
   margin-top: 8px;
   width: 180px;
+}
+@media all and (min-width: 768px) {
+  .logobar-logo span {
+    display: inline-block;
+    height: 42px;
+  }
 }
 .logobar.nav-opened {
   background-color: #5d004a;
