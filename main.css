@@ -2906,6 +2906,18 @@ div.fancy-select ul.options li.hover {
 .terms .termsList a {
   text-decoration: none;
 }
+.page-code {
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+@media all and (min-width: 768px) {
+  .page-code {
+    position: absolute;
+    right: 20px;
+  }
+}
 .logobar {
   background-color: #fff;
   padding: 30px 40px;
