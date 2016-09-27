@@ -4330,6 +4330,10 @@ div.fancy-select ul.options li.hover {
     font-size: 32px;
   }
 }
+.section404.sectionPrivacy p {
+  text-align: left;
+  margin-bottom: 12px;
+}
 .m-top50 {
   margin-top: 50px;
 }
