@@ -2076,6 +2076,10 @@ i {
 body {
   font-family: "plutolight";
 }
+sup {
+  font-size: 9px;
+  font-weight: normal;
+}
 h1 {
   color: #ef8214;
   font-family: "plutocondbold";
@@ -3305,6 +3309,9 @@ div.fancy-select ul.options li.hover {
 .productOverview .mentions {
   font-size: 12px;
   color: #bec0c2;
+}
+.productOverview .mentions sup {
+  font-size: 8px;
 }
 .productTable {
   display: block;
