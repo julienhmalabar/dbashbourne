@@ -3290,6 +3290,9 @@ div.fancy-select ul.options li.hover {
   font-family: "plutocondbold";
   font-size: 17px;
 }
+.productOverview-list {
+  padding-left: 0;
+}
 @media all and (max-width: 768px) {
   .productOverview-list {
     margin-top: 20px;
@@ -3298,6 +3301,10 @@ div.fancy-select ul.options li.hover {
 }
 .productOverview-list li {
   padding-bottom: 25px;
+}
+.productOverview .mentions {
+  font-size: 12px;
+  color: #bec0c2;
 }
 .productTable {
   display: block;
