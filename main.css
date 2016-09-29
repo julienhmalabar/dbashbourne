@@ -2724,7 +2724,7 @@ div.fancy-select ul.options li.hover {
 .cscTable-table .cscTable-column {
   border-left: 1px solid #cdced0;
   display: inline-block;
-  width: calc(100% / 6);
+  width: calc(100% / 5);
 }
 @media all and (max-width: 768px) {
   .cscTable-table .cscTable-column {
