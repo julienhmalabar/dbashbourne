@@ -3208,6 +3208,11 @@ div.fancy-select ul.options li.hover {
   font-size: 28px;
   text-transform: uppercase;
 }
+.prescribing-item .prescribing-item-title span {
+  text-transform: lowercase;
+  font-size: 14px;
+  display: block;
+}
 .prescribing-item .prescribing-item-line1,
 .prescribing-item .prescribing-item-line2 {
   padding-bottom: 10px;
