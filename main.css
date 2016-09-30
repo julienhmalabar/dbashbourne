@@ -3306,11 +3306,11 @@ div.fancy-select ul.options li.hover {
 .productOverview-list li {
   padding-bottom: 25px;
 }
-.productOverview .mentions {
+.mentions {
   font-size: 12px;
   color: #bec0c2;
 }
-.productOverview .mentions sup {
+.mentions sup {
   font-size: 8px;
 }
 .productTable {
