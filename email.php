@@ -3,14 +3,15 @@
     $toEmail = "hubert.julien@gmail.com";
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 	
+	print_r($_POST);
 	
 	if(isset($_POST['captchResponse'])){
           $captcha=$_POST['captchResponse'];
-        }
-        if(!$captcha){
-           print "<p class='Error'>Problem in Sending Mail.</p>";
-          exit;
-        }
+    }
+    if(!$captcha){
+    	print "<p class='Error'>Problem in Sending Mail.</p>";
+    	exit;
+   }
         $secretKey = "6LcARggUAAAAAAto65tJkVx1-5UhlmXt42a3B2JX";
         $ip = $_SERVER['REMOTE_ADDR'];
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
