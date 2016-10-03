@@ -17,7 +17,7 @@
         $ip = $_SERVER['REMOTE_ADDR'];
 		$url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip;
 		
-        $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+        $response=file_get_contents($url);
 		
         $responseKeys = json_decode($response,true);
         if(intval($responseKeys["success"]) !== 1) {
