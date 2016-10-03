@@ -3,7 +3,7 @@
     $toEmail = "thomas.louet@malabardesign.fr";
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 
-    if(mail($toEmail, "New message from Ethypharm UK Website", "\n\nEmail: " . $_POST["email"] . "\n\nPhone: " . $_POST["phone"] . "\n\nType: " . $_POST["select"] . "\n\nMessage: \n" . $_POST["message"].var_dump($_POST), $mailHeaders)) {
+    if(mail($toEmail, "New message from Ethypharm UK Website", "\n\nEmail: " . $_POST["email"] . "\n\nPhone: " . $_POST["phone"] . "\n\nType: " . $_POST["select"] . "\n\nMessage: \n" . $_POST["message"].$_POST['g-recaptcha-response'], $mailHeaders)) {
         
         print "<p class='success'>Contact Mail Sent.</p>";
 
