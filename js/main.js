@@ -9,11 +9,15 @@ $(document).ready(function() {
 		
 			var valid;	
 			valid = validateContact();
+			
+			
+			var captchResponse = $('#g-recaptcha-response').val();
+			alert(":"+captchResponse);
 
 			if(valid) {
 				$.ajax({
 					url: "email.php",
-					data:'name='+$("#name").val()+'&email='+$("#email").val()+'&phone='+$("#phone").val()+'&select='+$("#select").val()+'&message='+$("#message").val()+'&captchResponse='+$('#g-recaptcha-response').val(),
+					data:'name='+$("#name").val()+'&email='+$("#email").val()+'&phone='+$("#phone").val()+'&select='+$("#select").val()+'&message='+$("#message").val()+'&captchResponse='+captchResponse,
 					type: "POST",
 					success:function(results){
 						$(".section-contact-content").css("display","none");
@@ -56,8 +60,7 @@ $(document).ready(function() {
 				valid = false;
 			}
 
-			var captchResponse = $('#g-recaptcha-response').val();
-			alert(captchResponse);
+			
 			if(captchResponse.length == 0 ) {
 				$(".section-contact-error .error-recaptcha").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
