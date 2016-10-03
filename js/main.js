@@ -14,7 +14,7 @@ $(document).ready(function() {
 			var captchResponse = $('#g-recaptcha-response').val();
 			
 			
-			
+			dd
 			
 
 			if(valid) {
@@ -25,7 +25,7 @@ $(document).ready(function() {
 					success:function(results){
 						
 						$(".section-contact-content").css("display","none");
-						$('.section-contact-subtitle').html(results);
+						$('#section-contact-message .section-contact-subtitle').html(results);
 						$("#section-contact-message").css("display","block");
 					},
 					error:function (){}
