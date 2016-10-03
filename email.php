@@ -4,9 +4,9 @@
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 	
 	
-	echo "654".$_POST['captchResponse'];
+	 print "654".$_POST['captchResponse'];
 	if(isset($_POST['captchResponse'])){
-          $captcha=$_POST['captchResponse']; echo $captcha;
+          $captcha=$_POST['captchResponse'];  print $captcha;
     }
 	/*
     if(!$captcha){
