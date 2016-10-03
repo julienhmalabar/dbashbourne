@@ -24,9 +24,7 @@ $(document).ready(function() {
 						$(".section-contact-content").css("display","none");
 						$("#section-contact-message").css("display","block");
 					},
-					error:function (results){
-						alert(results);
-						}
+					error:function (){}
 				});
 			}
 			else {
