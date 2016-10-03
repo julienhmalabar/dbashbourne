@@ -57,6 +57,7 @@ $(document).ready(function() {
 			}
 
 			var captchResponse = $('#g-recaptcha-response').val();
+			alert(captchResponse);
 			if(captchResponse.length == 0 ) {
 				$(".section-contact-error .error-recaptcha").css('display','block').delay(4000).fadeOut("slow");
 				valid = false;
