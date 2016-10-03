@@ -3,11 +3,12 @@
     $toEmail = "hubert.julien@gmail.com";
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 	
-	print_r($_POST);
-	/*
+	
+	
 	if(isset($_POST['captchResponse'])){
-          $captcha=$_POST['captchResponse'];
+          $captcha=$_POST['captchResponse']; echo $captcha;
     }
+	/*
     if(!$captcha){
     	print "<p class='Error'>Problem in Sending Mail.</p>";
     	exit;
