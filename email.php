@@ -1,6 +1,6 @@
 <?php
 
-    $toEmail = "hubert.julien@gmail.com";
+    $toEmail = "info@ethypharm.co.uk";
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 	
 	
