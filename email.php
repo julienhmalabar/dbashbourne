@@ -19,7 +19,13 @@
 		
 		echo $url;
 		
-        $response=file_get_contents($url);
+       // $response=file_get_contents($url);
+		
+		$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$response = curl_exec($ch);
+
 		
         $responseKeys = json_decode($response,true);
         if(intval($responseKeys["success"]) !== 1) {
