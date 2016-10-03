@@ -19,13 +19,17 @@
 		
 		echo $url;
 		
-       // $response=file_get_contents($url);
+		$context = stream_context_create(array('http' => array('header'=>'Connection: close\r\n')));
+$response=file_get_contents($url,false,$context);
+        
+		/* 
+		$response=file_get_contents($url);
 		
 		$ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($ch);
-
+*/
 		
         $responseKeys = json_decode($response,true);
         if(intval($responseKeys["success"]) !== 1) {
