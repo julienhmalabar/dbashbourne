@@ -6,7 +6,7 @@
 	
 	 
 	if(isset($_POST['captchResponse'])){
-          $captcha=$_POST['captchResponse'];  print $captcha;
+          $captcha=$_POST['captchResponse'];  
     }
 	
     if(!$captcha){
@@ -16,6 +16,8 @@
        $secretKey = "6LcARggUAAAAAAto65tJkVx1-5UhlmXt42a3B2JX";
         $ip = $_SERVER['REMOTE_ADDR'];
 		$url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip;
+		
+		echo $url;
 		
         $response=file_get_contents($url);
 		
