@@ -20,8 +20,9 @@ $(document).ready(function() {
 					data:'name='+$("#name").val()+'&email='+$("#email").val()+'&phone='+$("#phone").val()+'&select='+$("#select").val()+'&message='+$("#message").val()+'&captchResponse='+captchResponse,
 					type: "POST",
 					success:function(results){
-						alert(results);
+						
 						$(".section-contact-content").css("display","none");
+						$('.section-contact-subtitle').html(results);
 						$("#section-contact-message").css("display","block");
 					},
 					error:function (){}
