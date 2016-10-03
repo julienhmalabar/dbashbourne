@@ -992,7 +992,7 @@ FileETag None
 # | Protection sur serveur de dev                                      |
 # ----------------------------------------------------------------------
 
-AuthUserFile /home/dbashbourne/public_html/.htpswd
-AuthName "Acces protege sur le serveur de developement"
-AuthType Basic
-Require valid-user
+#AuthUserFile /home/dbashbourne/public_html/.htpswd
+#AuthName "Acces protege sur le serveur de developement"
+#AuthType Basic
+#Require valid-user
