@@ -14,23 +14,9 @@ $(document).ready(function() {
 			var captchResponse = $('#g-recaptcha-response').val();
 			
 			
-			if(valid) {
-				$.ajax({
-					url: "https://www.google.com/recaptcha/api/siteverify",
-					data:'secret=6LcARggUAAAAAAto65tJkVx1-5UhlmXt42a3B2JX&response='+captchResponse,
-					type: "POST",
-					success:function(results){
-						
-						alert(results);
-					},
-					error:function (){}
-				});
-			}
-			else {
-				$(".section-contact-content").css("background-color","blue");
-			}
 			
-/*
+			
+
 			if(valid) {
 				$.ajax({
 					url: "email.php",
@@ -47,7 +33,7 @@ $(document).ready(function() {
 			}
 			else {
 				$(".section-contact-content").css("background-color","blue");
-			}*/
+			}
 
 		});
 
