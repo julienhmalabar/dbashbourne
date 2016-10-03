@@ -46,7 +46,7 @@ $response = curl_exec($ch);
 		//$response=loadFile($url);
 		
 		$context=stream_context_create(array('http' => array('header'=>"Host: www.google.com\r\n")));
-$response= file_get_contents('http://74.125.71.103/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$captcha.'&remoteip='.$ip, false, $context);
+$response= file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$captcha.'&remoteip='.$ip, false, $context);
 		
         $responseKeys = json_decode($response,true);
         if(intval($responseKeys["success"]) !== 1) {
