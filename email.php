@@ -4,7 +4,7 @@
     $mailHeaders = "From: Ethypharm UK : " . $_POST["name"] . "<". $_POST["email"] .">\r\n";
 	
 	print_r($_POST);
-	
+	/*
 	if(isset($_POST['captchResponse'])){
           $captcha=$_POST['captchResponse'];
     }
@@ -22,8 +22,8 @@
            $send = true;
         }
 		
-
-    if($send && mail($toEmail, "New message from Ethypharm UK Website", "\n\nEmail: " . $_POST["email"] . "\n\nPhone: " . $_POST["phone"] . "\n\nType: " . $_POST["select"] . "\n\nMessage: \n" . $_POST["message"], $mailHeaders)) {
+*/
+    if(mail($toEmail, "New message from Ethypharm UK Website", "\n\nEmail: " . $_POST["email"] . "\n\nPhone: " . $_POST["phone"] . "\n\nType: " . $_POST["select"] . "\n\nMessage: \n" . $_POST["message"], $mailHeaders)) {
         
         print "<p class='success'>Contact Mail Sent.</p>";
 
