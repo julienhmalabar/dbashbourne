@@ -13,7 +13,7 @@ $(document).ready(function() {
 			if(valid) {
 				$.ajax({
 					url: "email.php",
-					data:'name='+$("#name").val()+'&email='+$("#email").val()+'&phone='+$("#phone").val()+'&select='+$("#select").val()+'&message='+$("#message").val(),
+					data:'name='+$("#name").val()+'&email='+$("#email").val()+'&phone='+$("#phone").val()+'&select='+$("#select").val()+'&message='+$("#message").val()+'&captchResponse='+$('#g-recaptcha-response').val(),
 					type: "POST",
 					success:function(results){
 						$(".section-contact-content").css("display","none");
