@@ -12,7 +12,7 @@ $(document).ready(function() {
 			
 			
 			var captchResponse = $('#g-recaptcha-response').val();
-			alert(":"+captchResponse);
+			
 
 			if(valid) {
 				$.ajax({
@@ -24,7 +24,9 @@ $(document).ready(function() {
 						$(".section-contact-content").css("display","none");
 						$("#section-contact-message").css("display","block");
 					},
-					error:function (){}
+					error:function (results){
+						alert(results);
+						}
 				});
 			}
 			else {
