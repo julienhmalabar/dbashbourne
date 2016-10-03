@@ -14,7 +14,7 @@ $(document).ready(function() {
 			var captchResponse = $('#g-recaptcha-response').val();
 			
 			
-			dd
+			
 			
 
 			if(valid) {
