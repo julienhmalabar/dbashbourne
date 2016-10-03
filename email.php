@@ -13,7 +13,7 @@
     	print "<p class='Error'>Problem in Sending Mail.</p>";
     	exit;
    }
-        $secretKey = "6LcARggUAAAAAAto65tJkVx1-5UhlmXt42a3B2JX";
+      /*  $secretKey = "6LcARggUAAAAAAto65tJkVx1-5UhlmXt42a3B2JX";
         $ip = $_SERVER['REMOTE_ADDR'];
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
 		
@@ -22,7 +22,7 @@
           $send = false; echo "a";
         } else {
            $send = true;  echo "b";
-        }
+        }*/
 		
 
     if(mail($toEmail, "New message from Ethypharm UK Website", "\n\nEmail: " . $_POST["email"] . "\n\nPhone: " . $_POST["phone"] . "\n\nType: " . $_POST["select"] . "\n\nMessage: \n" . $_POST["message"], $mailHeaders)) {
