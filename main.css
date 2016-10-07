@@ -4289,10 +4289,12 @@ div.fancy-select ul.options li.hover {
   padding-bottom: 30px;
   font-size: 16px;
 }
-.worldwide-modal {
+.worldwide-modal,
+.display-modal {
   text-align: center;
 }
-.worldwide-modal .modal-dialog {
+.worldwide-modal .modal-dialog,
+.display-modal .modal-dialog {
   left: 0;
   margin-top: -120px;
   position: absolute;
@@ -4300,14 +4302,16 @@ div.fancy-select ul.options li.hover {
   top: 50%;
 }
 @media all and (max-width: 768px) {
-  .worldwide-modal .modal-dialog {
+  .worldwide-modal .modal-dialog,
+  .display-modal .modal-dialog {
     left: auto;
     right: auto;
     top: auto;
     margin-top: 10px;
   }
 }
-.worldwide-modal .modal-content {
+.worldwide-modal .modal-content,
+.display-modal .modal-content {
   background: #fff;
   border: 10px solid #fff;
   border-radius: 0;
